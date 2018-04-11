@@ -1,0 +1,226 @@
+p {
+    margin: 0
+}
+
+.contacts {
+    display: flex;
+    justify-content: flex-end;
+    margin: 24px 16px 0;
+}
+
+.contacts svg {
+    margin-left: 18px;
+    color: #345279;
+    align-items: flex-end;
+}
+
+#email {
+    margin-top: 1.2px;
+}
+
+.header {
+     margin: 88px 17px 9px;
+}
+
+.name {
+    font-family: Acre, sans-serif;
+    font-size: 64px;
+    font-weight: 500;
+    line-height: 1.06;
+    color: #345279;
+    display: flex;
+    margin-bottom: 9px;
+}
+
+.description {
+    margin-bottom: 56px;
+    display: flex;
+    font-family: Gotham-Light;
+    font-size: 18px;
+    color: #777777;
+}
+
+.description p {
+    display : inline-block;
+    margin: 0;
+}
+
+.description p:first-child {
+    margin-right: 6px;
+}
+
+.nav {
+    padding: 0;
+    margin-top: 0;
+    margin-bottom: 28px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    font-family: Gotham-Bold;
+    font-size: 14px;
+    color: #777777;
+}
+
+.nav li {
+    list-style: none;
+    margin-bottom: 36px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.nav li:hover {
+    color: #6396D7;
+}
+
+#about {
+    font-family: Gotham-Light;
+    font-size: 18px;
+    color: #777777;
+    line-height: 34px; 
+    padding: 0 17px;
+}
+
+#about p {
+    margin-bottom: 48px;
+}
+
+.underline {
+    border-bottom: 1.5px dotted;
+    text-decoration: none;
+    color: #777777;
+}
+
+.underline:hover {
+    color: #6396D7;
+}
+
+.work-card {
+    width: 100%;
+    height: 172px;
+    display: flex;
+    align-items: center;
+    color: white;
+    text-decoration: none;
+    justify-content: center;
+    font-family: Gotham-Light;
+    font-size: 18px;
+    color: #FFFFFF;
+    line-height: 29px;
+}
+
+.work-card img {
+    height: 77px;
+    margin-right: 22px;
+}
+
+#rbc-logo {
+    margin-right: 32px;
+}
+
+#work {
+    width: 100vw;
+    margin-left: -8px;
+}
+
+#work a {
+    text-decoration: none;
+}
+
+.work-title {
+    font-family: Acre-Medium;
+    font-size: 18px;
+    color: #FFFFFF;
+    margin-bottom: 0px;
+}
+
+
+.work-caption {
+    font-family: Gotham-Light;
+    font-size: 18px;
+    color: #FFFFFF;
+}
+
+.back-to-top {
+    display: flex;
+    justify-content: center;
+    font-family: Gotham-Bold;
+    font-size: 18px;
+    color: #606060;
+    margin: 42px 0 34px;
+}
+
+.back-to-top svg {
+    margin-right: 14px;
+}
+
+.hide-on-mobile {
+    display: none;
+}
+
+@media screen and (min-width: 570px) {
+    
+    .name {
+        justify-content: center;
+    }
+    
+    .description {
+        justify-content: center;
+    }
+    
+    .nav {
+        flex-direction: row;
+        justify-content: center;
+    }
+    
+    .nav li {
+        margin-right: 87px;
+    }
+    
+    .nav li:last-child {
+        margin-right: 0;
+    }
+    
+    #about {
+        max-width: 650px;
+        margin: 0 auto;
+    }
+    
+    #about p {
+    margin-bottom: 0px;
+    }
+
+    .work-card {
+        flex-direction: column;
+        height: 659px;
+    }
+    
+    .work-content {
+        text-align:center;
+        max-width: 455px;
+    }
+    
+    .work-caption {
+        margin-bottom: 28px;
+    }
+    
+    .work-card img {
+        height: 294px;
+        max-width: 444px;
+        margin-right: 0px;
+        margin-bottom: 40px;
+    }
+    
+    #rbc-logo {
+    margin-right: 0px;
+    }
+
+    .back-to-top {
+        margin: 83px 0 85px;
+    }
+    
+    .hide-on-mobile {
+        display: initial;
+    }
+}
+
