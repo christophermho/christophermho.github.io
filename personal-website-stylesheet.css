@@ -1,3 +1,18 @@
+@font-face {
+    font-family: "Gotham-Light";
+    src: url(Gotham/Gotham-Light.otf);
+}
+
+@font-face {
+    font-family: "Gotham-Bold";
+    src: url(Gotham/Gotham-Bold.otf);
+}
+
+@font-face {
+    font-family: "Acre-Medium";
+    src: url(Acre/Acre-Medium.otf);
+}
+
 body {
     margin: 0px;
 }
@@ -10,7 +25,7 @@ body {
     align-items: flex-start;
     color: #FFFFFF;
     justify-content: flex-start;
-    font-family: Gotham-Bold;
+    font-family: "Gotham-Bold";
     font-size: 18px;
     margin: 0;
     background-color: #345279; 
@@ -22,7 +37,7 @@ body {
 }
 
 .back-to-work {
-    font-family: Gotham-Bold;
+    font-family: "Gotham-Bold";
     margin: 22px 0px 0px 22px;
     font-size: 18px;
 }
@@ -32,41 +47,41 @@ body {
 }
 
 .work-title {
-    font-family: Acre-Medium;
+    font-family: "Acre-Medium";
     font-size: 28px;
     color: #FFFFFF;
     margin: 47px 0px 6px 30px;
 }
 
 .work-caption {
-    font-family: Gotham-Light;
+    font-family: "Gotham-Light";
     font-size: 18px;
     color: #FFFFFF;
     margin-left: 30px;
 }
 
 .tools {
-    font-family: Gotham-Light;
+    font-family: "Gotham-Light";
     font-size: 18px;
     color: #777777;
     margin: 18px 0px 28px 0px;
 }
 
 #tools {
-    font-family: Acre-Medium;
+    font-family: "Acre-Medium";
     color: #345279;
 }
 
 .content {
     padding: 0px 30px;
-    font-family: Gotham-Light;
+    font-family: "Gotham-Light";
     font-size: 18px;
     color: #777777;
     line-height: 34px;
 }
 
 .content-section-title {
-    font-family: Acre-Medium;
+    font-family: "Acre-Medium";
     font-size: 35px;
     color: #345279;
     margin-bottom: 4px;
@@ -85,7 +100,7 @@ body {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    font-family: Gotham-Bold;
+    font-family: "Gotham-Bold";
     font-size: 18px;
     line-height: 18px;
     text-align: left;
