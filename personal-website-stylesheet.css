@@ -39,7 +39,7 @@ body {
 .back-to-work {
     font-family: "Gotham-Bold", sans-serif;
     margin: 22px 0px 0px 22px;
-    font-size: 18px;
+    font-size: 16px;
 }
 
 .back-to-work svg {
@@ -64,7 +64,7 @@ body {
     font-family: "Gotham-Light", sans-serif;
     font-size: 18px;
     color: #777777;
-    margin: 18px 0px 28px 0px;
+    margin: 14px 0px 48px 0px;
 }
 
 #tools {
@@ -84,11 +84,11 @@ body {
     font-family: "Acre-Medium", sans-serif;
     font-size: 35px;
     color: #345279;
-    margin-bottom: 4px;
+    margin-bottom: 8px;
 }
 
 .content-section {
-       margin-bottom: 32px;
+       margin-bottom: 64px;
 }
 
 .back-next {

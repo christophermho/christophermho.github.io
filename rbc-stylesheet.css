@@ -39,7 +39,7 @@ body {
 .back-to-work {
     font-family: "Gotham-Bold", sans-serif;
     margin: 22px 0px 0px 22px;
-    font-size: 18px;
+    font-size: 16px;
 }
 
 .back-to-work svg {
@@ -64,7 +64,7 @@ body {
     font-family: "Gotham-Light", sans-serif;
     font-size: 18px;
     color: #777777;
-    margin: 18px 0px 28px 0px;
+    margin: 14px 0px 48px 0px;
 }
 
 #tools {
@@ -84,11 +84,19 @@ body {
     font-family: "Acre-Medium", sans-serif;
     font-size: 35px;
     color: #005AB4;
-    margin-bottom: 4px;
+    margin-bottom: 8px;
 }
 
 .content-section {
-       margin-bottom: 32px;
+       margin-bottom: 64px;
+}
+
+.center-img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .next {

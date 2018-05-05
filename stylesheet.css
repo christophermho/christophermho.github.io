@@ -87,6 +87,10 @@ p {
     color: #6396D7;
 }
 
+.nav a:hover {
+    color: #6396D7;
+}
+
 #about {
     font-family: "Gotham-Light", sans-serif;
     font-size: 18px;
@@ -159,7 +163,7 @@ p {
     display: flex;
     justify-content: center;
     font-family: "Gotham-Bold", sans-serif;
-    font-size: 18px;
+    font-size: 16px;
     color: #606060;
     margin: 42px 0 34px;
 }
@@ -211,7 +215,7 @@ p {
     
     .work-content {
         text-align:center;
-        max-width: 455px;
+        max-width: 475px;
     }
     
     .work-caption {
@@ -220,7 +224,6 @@ p {
     
     .work-card img {
         height: 294px;
-        max-width: 444px;
         margin-right: 0px;
         margin-bottom: 40px;
     }
