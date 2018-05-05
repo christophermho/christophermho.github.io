@@ -38,7 +38,7 @@ p {
 }
 
 .name {
-    font-family: Acre, sans-serif;
+    font-family: "Acre-Medium", sans-serif;
     font-size: 64px;
     font-weight: 500;
     line-height: 1.06;
@@ -50,7 +50,7 @@ p {
 .description {
     margin-bottom: 56px;
     display: flex;
-    font-family: "Gotham-Light";
+    font-family: "Gotham-Light", sans-serif;
     font-size: 18px;
     color: #777777;
 }
@@ -71,15 +71,14 @@ p {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    font-family: "Gotham-Bold";
-    font-size: 14px;
+    font-family: "Gotham-Bold", sans-serif;
     color: #777777;
 }
 
 .nav li {
     list-style: none;
     margin-bottom: 36px;
-    font-size: 18px;
+    font-size: 14px;
     font-weight: bold;
     cursor: pointer;
 }
@@ -89,7 +88,7 @@ p {
 }
 
 #about {
-    font-family: "Gotham-Light";
+    font-family: "Gotham-Light", sans-serif;
     font-size: 18px;
     color: #777777;
     line-height: 34px; 
@@ -118,7 +117,7 @@ p {
     color: white;
     text-decoration: none;
     justify-content: center;
-    font-family: "Gotham-Light";
+    font-family: "Gotham-Light", sans-serif;
     font-size: 18px;
     color: #FFFFFF;
     line-height: 29px;
@@ -143,7 +142,7 @@ p {
 }
 
 .work-title {
-    font-family: "Acre-Medium";
+    font-family: "Acre-Medium", sans-serif;
     font-size: 18px;
     color: #FFFFFF;
     margin-bottom: 0px;
@@ -151,7 +150,7 @@ p {
 
 
 .work-caption {
-    font-family: "Gotham-Light";
+    font-family: "Gotham-Light", sans-serif;
     font-size: 18px;
     color: #FFFFFF;
 }
@@ -159,7 +158,7 @@ p {
 .back-to-top {
     display: flex;
     justify-content: center;
-    font-family: "Gotham-Bold";
+    font-family: "Gotham-Bold", sans-serif;
     font-size: 18px;
     color: #606060;
     margin: 42px 0 34px;
