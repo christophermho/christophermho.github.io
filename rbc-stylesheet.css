@@ -88,7 +88,11 @@ body {
 }
 
 .content-section {
-       margin-bottom: 64px;
+    margin-bottom: 32px;
+}
+
+.content-last-section {
+    margin-bottom: 64px;
 }
 
 .center-img {
@@ -125,20 +129,24 @@ body {
         margin: auto;
     }
     
+    .work-content {
+        width: 650px;
+        margin: 0 auto;
+        padding: 0 30px;
+    }
+    
     .work-title {
         font-size: 48px;
         margin-top: 80px;
+        margin-left: 0px;
     }
     
     .work-caption {
         font-size: 20px;
+        margin-left: 0px;
     }
 
     .content {
         max-width: 650px;
         margin: auto;
-    }
-    
-    .tools {
-        
     }
