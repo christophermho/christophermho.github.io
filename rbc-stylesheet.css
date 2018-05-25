@@ -88,10 +88,11 @@ body {
 }
 
 .content-section {
-    margin-bottom: 32px;
+    margin-bottom: 18px;
 }
 
 .content-last-section {
+    margin-top: 24px;
     margin-bottom: 64px;
 }
 
@@ -99,7 +100,8 @@ body {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 80%;
+    margin-bottom: 48px;
+    width: 90%;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
@@ -113,7 +115,7 @@ body {
     text-align: right;
     text-decoration: none;
     color: #606060;
-    margin-bottom: 48px;
+    margin-bottom: 128px;
 }
 
 .next svg {

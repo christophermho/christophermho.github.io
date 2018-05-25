@@ -6,13 +6,16 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <link rel="icon" href="images/ch-icon@3x.png">
+        <link rel="stylesheet" href="normalize.css">
         <link rel="stylesheet" href="stylesheet.css">
-        <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js" integrity="sha384-SlE991lGASHoBfWbelyBPLsUlwY1GwNDJo3jSJO04KZ33K2bwfV9YBauFfnzvynJ" crossorigin="anonymous"></script>
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous" media="screen">
     </head>
     
     <body>
-        <!-- Contact -->
+        
+        <!-- Header -->
+        <div class="container"> 
+            
+            <!-- Contact -->
         <div class="contacts"> 
             <a href="mailto:christopher.m.ho@gmail.com">
                 <i id="email" class="far fa-envelope fa-lg"></i>
@@ -21,9 +24,7 @@
                 <i class="fab fa-linkedin-in fa-lg"></i>
             </a>
         </div>
-        
-        <!-- Header -->
-        <div> 
+            
             <div class="header">
                 <div class="name">
                     christopher ho
@@ -32,9 +33,9 @@
                     <p>designer // engineering student</p>
                 </div>
                     <ul class="nav">
-                      <li>ABOUT</li>
-                      <li>WORK</li>
-                      <li><a href="Christopher Ho Resume.pdf" target="_blank" style="padding: 0; color: #777777;">RESUME</a></li>
+                        <li><button onclick="displayContent('about')" class="nav-btn about-btn">ABOUT</button></li>
+                        <li><button onclick="displayContent('work')" class="nav-btn work-btn">WORK</button></li>
+                      <li><a href="Christopher%20Ho%20Resume.pdf" target="_blank" style="padding: 0; color: #777777;"><button>RESUME</button></a></li>
                     </ul> 
             </div>
 
@@ -68,7 +69,7 @@
                         <div class="work-content">
                             <div class="work-title">James Kim's Portfolio</div>
                             <div class="work-caption">Web Design, UI, UX</div>
-                            <div class="hide-on-mobile">I designed a responsive and heavily animated site for developer James Kim so he could show off his front-end development skills.</div>
+                            <div class="hide-on-mobile">I designed a responsive and interactive website for developer James Kim so he could show off his front-end development skills.</div>
                         </div>
                     </div>
                 </a>
@@ -82,16 +83,18 @@
                         </div>
                     </div>
                 </a>
+<!--
+                    <div class="back-to-top">
+                        <i class="fas fa-arrow-up"></i>BACK TO TOP
+                    </div>  
+-->
             </div>
-            <div class="back-to-top">
-                <i class="fas fa-arrow-up"></i>BACK TO TOP
-            </div>  
          </div>    
         </div>
         
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.js"></script>
-    	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-    	<script src="js/script.js"></script>
+        <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js" integrity="sha384-SlE991lGASHoBfWbelyBPLsUlwY1GwNDJo3jSJO04KZ33K2bwfV9YBauFfnzvynJ" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+        <script src="script.js"></script> 
         
     </body>
 </html>

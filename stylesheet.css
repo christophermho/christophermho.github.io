@@ -13,11 +13,26 @@
     src: url(Acre/Acre-Medium.otf);
 }
 
+html {
+    overflow-y: scroll;
+}
+
 p {
     margin: 0
 }
 
+.container {
+    position: relative;
+    min-height: 100vh;
+    padding: 0;
+    width: 100%;    
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
 .contacts {
+    align-self: flex-end;
     display: flex;
     justify-content: flex-end;
     margin: 24px 16px 0;
@@ -34,7 +49,10 @@ p {
 }
 
 .header {
-     margin: 88px 17px 9px;
+    position: absolute;
+    top: 50%;
+    padding: 0 17px;
+    transform: translateY(-50%);
 }
 
 .name {
@@ -71,24 +89,27 @@ p {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    font-family: "Gotham-Bold", sans-serif;
-    color: #777777;
 }
 
 .nav li {
     list-style: none;
     margin-bottom: 36px;
-    font-size: 14px;
-    font-weight: bold;
+}
+
+.nav button {
     cursor: pointer;
+    font-family: "Gotham-Bold", sans-serif;
+    color: #777777;
+    background-color: inherit;
+    border: none;
 }
 
-.nav li:hover {
+.nav button:hover {
     color: #6396D7;
 }
 
-.nav a:hover {
-    color: #6396D7;
+#content {
+    width: 100%;
 }
 
 #about {
@@ -97,6 +118,7 @@ p {
     color: #777777;
     line-height: 34px; 
     padding: 0 17px;
+    display: none;
 }
 
 #about p {
@@ -137,8 +159,9 @@ p {
 }
 
 #work {
-    width: 100vw;
-    margin-left: -8px;
+    width: 100%;
+    display: none;
+
 }
 
 #work a {
@@ -178,12 +201,17 @@ p {
 
 @media screen and (min-width: 570px) {
     
+    .container {
+        align-items: center;
+    }
+    
     .name {
         justify-content: center;
     }
     
     .description {
         justify-content: center;
+        margin-bottom: 36px;
     }
     
     .nav {
@@ -202,6 +230,7 @@ p {
     #about {
         max-width: 650px;
         margin: 0 auto;
+        padding-bottom: 86px;
     }
     
     #about p {
