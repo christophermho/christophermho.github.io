@@ -99,6 +99,7 @@ p {
 .nav button {
     cursor: pointer;
     font-family: "Gotham-Bold", sans-serif;
+    font-size: 13px;
     color: #777777;
     background-color: inherit;
     border: none;
@@ -230,7 +231,7 @@ p {
     #about {
         max-width: 650px;
         margin: 0 auto;
-        padding-bottom: 86px;
+        padding-bottom: 96px;
     }
     
     #about p {
