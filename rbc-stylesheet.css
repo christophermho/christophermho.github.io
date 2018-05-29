@@ -103,24 +103,29 @@ body {
     font-family: "Acre-Medium", sans-serif;
     font-size: 35px;
     color: #005AB4;
-    margin-bottom: 8px;
+    margin-bottom: 12px;
 }
 
 .content-section {
-    margin-bottom: 18px;
+    margin-bottom: 28px;
 }
 
-.content-last-section {
-    margin-top: 24px;
+.content-one-section {
     margin-bottom: 64px;
 }
 
-.center-img {
+.content-last-section {
+    margin-bottom: 64px;
+}
+
+.centre-img {
     display: block;
+    margin-top: 40px;
+    margin-bottom:48px;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 48px;
-    width: 90%;
+    width: 80%;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
@@ -135,6 +140,7 @@ body {
     text-decoration: none;
     color: #606060;
     margin-bottom: 128px;
+    margin-top: 64px;
 }
 
 .next svg {
