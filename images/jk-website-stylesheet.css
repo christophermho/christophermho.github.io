@@ -1,0 +1,221 @@
+@font-face {
+    font-family: "Gotham-Light";
+    src: url(Gotham/Gotham-Light.otf);
+}
+
+@font-face {
+    font-family: "Gotham-Bold";
+    src: url(Gotham/Gotham-Bold.otf);
+}
+
+@font-face {
+    font-family: "Acre-Medium";
+    src: url(Acre/Acre-Medium.otf);
+}
+
+.grow { 
+    -webkit-transition: all .2s ease-in-out; 
+    transition: all .2s ease-in-out; 
+}
+
+.grow:hover {
+    -webkit-transform: scale (1.1);
+    transform: scale(1.1); 
+    -webkit-transition: all .2s ease-in-out; 
+    transition: all .2s ease-in-out;
+}
+
+.grow:hover svg {
+    -webkit-transform: scale (1.1);
+    transform: scale(1.1); 
+    -webkit-transition: all .2s ease-in-out; 
+    transition: all .2s ease-in-out;
+}
+
+body {
+    margin: 0px;
+}
+
+.work-card {
+    width: 100%;
+    height: 172px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    color: #FFFFFF;
+    justify-content: flex-start;
+    font-family: "Gotham-Bold", sans-serif;
+    font-size: 18px;
+    margin: 0;
+    background-color: #88C5D7; 
+}
+
+.work-card a {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.back-to-work {
+    font-family: "Gotham-Bold", sans-serif;
+    margin: 22px 0px 0px 22px;
+    font-size: 16px;
+}
+
+.back-to-work svg {
+    margin-right: 14px;
+}
+
+.work-title {
+    font-family: "Acre-Medium", sans-serif;
+    font-size: 28px;
+    color: #FFFFFF;
+    margin: 47px 0px 6px 30px;
+}
+
+.work-caption {
+    font-family: "Gotham-Light", sans-serif;
+    font-size: 18px;
+    color: #FFFFFF;
+    margin-left: 30px;
+}
+
+.tools {
+    font-family: "Gotham-Light", sans-serif;
+    font-size: 18px;
+    color: #777777;
+    margin: 14px 0px 48px 0px;
+}
+
+#tools {
+    font-family: "Acre-Medium", sans-serif;
+    color: #88C5D7;
+}
+
+.content {
+    padding: 0px 30px;
+    font-family: "Gotham-Light", sans-serif;
+    font-size: 18px;
+    color: #777777;
+    line-height: 34px;
+}
+
+.content-section-title {
+    font-family: "Acre-Medium", sans-serif;
+    font-size: 35px;
+    color: #88C5D7;
+    margin-bottom: 12px;
+}
+
+.content-section {
+    margin-bottom: 28px;
+}
+
+.content-one-section {
+    margin-bottom: 64px;
+}
+
+.content-last-section {
+    margin-bottom: 64px;
+}
+
+.image-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.centre-img {
+    display: block;
+    margin-top: 48px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 48px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.mobile-img {
+    width: 50%;
+}
+
+.mobile-last-img {
+    margin-bottom: 64px;
+}
+
+.desktop-img {
+    width: 85%;
+}
+
+.back-next {
+    display: flex;
+    justify-content: space-between;
+}
+
+.back {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-family: "Gotham-Bold", sans-serif;
+    font-size: 18px;
+    line-height: 18px;
+    text-align: left;
+    text-decoration: none;
+    color: #606060;
+    margin-bottom: 128px;
+}
+
+.back svg {
+    color: #005AB4;
+    font-size: 18px;
+    margin-right: 14px;
+}
+
+.next {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-family: "Gotham-Bold", sans-serif;
+    font-size: 18px;
+    line-height: 18px;
+    text-align: right;
+    text-decoration: none;
+    color: #606060;
+    margin-bottom: 128px;
+}
+
+.next svg {
+    color: #345279;
+    font-size: 18px;
+    margin-left: 14px;
+}
+
+@media screen and (min-width: 570px) {
+    
+    .work-card {
+        height: 240px;
+        margin: auto;
+    }
+    
+    .work-content {
+        width: 650px;
+        margin: 0 auto;
+        padding: 0 30px;
+    }
+    
+    .work-title {
+        font-size: 48px;
+        margin-top: 80px;
+        margin-left: 0px;
+    }
+    
+    .work-caption {
+        font-size: 20px;
+        margin-left: 0px;
+    }
+
+    .content {
+        max-width: 650px;
+        margin: auto;
+    }
+    
+    .mobile-img {
+        width: 30%;
+    }
