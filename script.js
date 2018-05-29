@@ -12,7 +12,7 @@ function displayContent(content){
     let $prevContent = $(".prev");
     if (firstTime === true){
             $header.animate({
-                top: $header.outerHeight()/2+45
+                top: $header.outerHeight()/2-58.2
             }, 'slow', function(){
                 $container.css({
                 "position": "static", 
