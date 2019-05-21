@@ -39,7 +39,7 @@ function displayContent(content){
     $content.addClass("prev");
     $content.css("order", "2");
     $contentBtn.css({
-        color: "#345279"
+        color: "#000000"
     });
     
     $contentBtn.attr("disabled", true);
