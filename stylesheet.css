@@ -45,6 +45,7 @@ html {
     transform: scale(1.2); 
     -webkit-transition: all .2s ease-in-out; 
     transition: all .2s ease-in-out;
+    opacity: 0.6;
 }
 
 .grow:hover img {
@@ -52,6 +53,7 @@ html {
     transform: scale(1.1); 
     -webkit-transition: all .2s ease-in-out; 
     transition: all .2s ease-in-out;
+    opacity: 0.95;
 }
 
 p {
@@ -204,6 +206,8 @@ p {
 .work-card img {
     height: 77px;
     margin-right: 22px;
+}
+
 /*
     -webkit-transform: scale(1.2);
     transform: scale(1.2);
