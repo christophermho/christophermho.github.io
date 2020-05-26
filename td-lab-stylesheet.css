@@ -72,6 +72,21 @@ blockquote {
     margin-left: 30px;
 }
 
+/*
+.team {
+    font-family: "Open Sans", sans-serif;
+    font-size: 18px;
+    color: #777777;
+    margin: 14px 0px 8px 0px;
+}
+
+#team {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 600;
+    color: #54B948;
+}
+*/
+
 .tools {
     font-family: "Open Sans", sans-serif;
     font-size: 18px;
@@ -119,16 +134,25 @@ blockquote {
     margin-bottom:48px;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 16px;
-    width: 90%;
+    margin-bottom: 24px;
+    width: 100%;
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.centre-img-no-shadow {
+    display: block;
+    margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 24px;
+    width: 100%;
 }
 
 p {
     align-content: center;
     text-align: center;
     margin: auto;
-    margin-bottom: 40px;
+    margin-bottom: 24px;
     font-size: 14px;
     font-weight: 400;
 }
@@ -138,6 +162,14 @@ p {
 }
 
 #user-flow {
+    margin-bottom: 64px;
+}
+
+#n2c {
+    margin-bottom: 64px;
+}
+
+#final {
     margin-bottom: 64px;
 }
 

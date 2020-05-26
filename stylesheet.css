@@ -79,13 +79,15 @@ p {
 
 .contacts svg {
     margin-left: 18px;
-    color: #777777;
+    color: #FFFFFF;
     align-items: flex-end;
 }
 
+/*
 .contacts svg:hover {
     color: #000000;
 }
+*/
 
 #credits {
     font-family: 'Open Sans', sans-serif;
@@ -93,7 +95,7 @@ p {
     line-height: 1.06;
     color: #777777;
     text-align: center;
-    height: 5vh;
+    height: 7vh;
 }
 
 #email {
@@ -290,7 +292,7 @@ p {
     }
     
     .nav li {
-        margin-right: 87px;
+        margin-right: 64px;
     }
     
     .nav li:last-child {
@@ -339,4 +341,5 @@ p {
         display: initial;
     }
 }
+
 
