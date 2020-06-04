@@ -1,20 +1,20 @@
 /*
-.grow { 
-    -webkit-transition: all .2s ease-in-out; 
-    transition: all .2s ease-in-out; 
+.grow {
+    -webkit-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
 }
 
 .grow:hover {
     -webkit-transform: scale (1.1);
-    transform: scale(1.1); 
-    -webkit-transition: all .2s ease-in-out; 
+    transform: scale(1.1);
+    -webkit-transition: all .2s ease-in-out;
     transition: all .2s ease-in-out;
 }
 
 .grow:hover svg {
     -webkit-transform: scale (1.1);
-    transform: scale(1.1); 
-    -webkit-transition: all .2s ease-in-out; 
+    transform: scale(1.1);
+    -webkit-transition: all .2s ease-in-out;
     transition: all .2s ease-in-out;
 }
 */
@@ -34,7 +34,7 @@ body {
     font-family: "Open Sans", sans-serif;
     font-size: 18px;
     margin: 0;
-    background-color: #005AB4; 
+    background-color: #005AB4;
 }
 
 .work-card a {
@@ -42,6 +42,10 @@ body {
     color: #FFFFFF;
 }
 
+.work-home {
+    margin-left: 30px;
+    font-weight: 600;
+}
 
 .back-to-work {
     font-family: "Open Sans", sans-serif;
@@ -50,7 +54,7 @@ body {
     font-weight: 600;
 }
 
-.back-to-work svg {
+.work-content svg {
     margin-right: 14px;
 }
 
@@ -152,24 +156,28 @@ p {
 }
 
 @media screen and (min-width: 570px) {
-    
+
     .work-card {
         height: 240px;
         margin: auto;
     }
-    
+
     .work-content {
         width: 650px;
         margin: 0 auto;
         padding: 0 30px;
     }
-    
+
+    .work-home {
+        margin-left: 0;
+    }
+
     .work-title {
         font-size: 48px;
         margin-top: 80px;
         margin-left: 0px;
     }
-    
+
     .work-caption {
         font-size: 20px;
         margin-left: 0px;
