@@ -79,7 +79,7 @@ p {
 
 .contacts svg {
     margin-left: 18px;
-    color: #FFFFFF;
+    color: #FFFFFFFF;
     align-items: flex-end;
 }
 
@@ -95,7 +95,7 @@ p {
     line-height: 1.06;
     color: #777777;
     text-align: center;
-    height: 7vh;
+    height: 5vh;
 }
 
 #email {
@@ -292,7 +292,7 @@ p {
     }
     
     .nav li {
-        margin-right: 64px;
+        margin-right: 87px;
     }
     
     .nav li:last-child {
@@ -341,5 +341,4 @@ p {
         display: initial;
     }
 }
-
 
