@@ -209,8 +209,8 @@ body {
 
 .work {
   background-color: #f8f9fa;
-  padding-top: 192px;
-  padding-bottom: 192px;
+  padding-top: 128px;
+  padding-bottom: 128px;
   padding-left: 24px;
   padding-right: 24px;
 }
@@ -225,7 +225,7 @@ body {
 
 .card {
   background-color: white;
-  margin-bottom: 64px;
+  margin-bottom: 36px;
   border-radius: 24px;
   border-width: 0;
   transition-property: transform, box-shadow;
