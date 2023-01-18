@@ -239,6 +239,7 @@ body {
 }
 
 .view-more {
+  color: #b2b2b2;
   transition-property: color;
   transition-duration: 0.3s;
 }
@@ -413,6 +414,24 @@ body {
   max-width: 100%;
   height: auto;
   margin-bottom: 192px;
+}
+
+.content-highlight-amd {
+  background: rgba(136, 136, 136, 0.1);
+  padding: 24px 24px 24px 24px;
+  border-radius: 16px;
+}
+
+.content-highlight-td-lab {
+  background: rgba(64, 184, 96, 0.1);
+  padding: 24px 24px 24px 24px;
+  border-radius: 16px;
+}
+
+.content-highlight-rbc {
+  background: rgba(78, 142, 232, 0.1);
+  padding: 24px 24px 24px 24px;
+  border-radius: 16px;
 }
 
 /* FOOTER */
