@@ -13,21 +13,6 @@ a:hover {
   color: #f1dc90;
 }
 
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-
-ol {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  columns: 2;
-  -webkit-columns: 2;
-  -moz-columns: 2;
-}
-
 body {
   font-family: "Montserrat", sans-serif;
   margin: 0;
@@ -434,6 +419,18 @@ body {
   border-radius: 16px;
 }
 
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+ol {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
 /* FOOTER */
 
 .footer {
@@ -557,6 +554,15 @@ body {
   .title-mockup-amd {
     height: 520px;
     width: auto;
+  }
+
+  ol {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    columns: 2;
+    -webkit-columns: 2;
+    -moz-columns: 2;
   }
 
   /* FOOTER */
