@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Christopher Ho</title>
+    <title>About — Christopher Ho</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" href="img/ch-icon.png" />
@@ -42,18 +42,20 @@
     </div>
     <div class="landing web-thin">
       <img
-        class="intro-img"
+        class="intro-img animate__animated animate__fadeInUp"
         src="img/me.png"
         alt="Christopher Ho"
         width="327"
         height="390"
       />
-      <div class="intro-text">
+      <div class="intro-text animate__animated animate__fadeInUp">
         <div>
           <div class="intro-title color-black">
             I’m from the GTA, love cats, adidas, and #000000.
           </div>
-          <div class="intro-desc margin-bottom-96">
+          <div
+            class="intro-desc margin-bottom-96 animate__animated animate__fadeInUp"
+          >
             My path to design was a bit unorthodox. I originally studied
             engineering, but soon realized I had little interest in math and
             physics. Eventually, I decided to transfer programs and pursue a
@@ -69,7 +71,7 @@
     </div>
     <div class="about web-thin">
       <ul>
-        <li class="about-section">
+        <li class="about-section reveal">
           <div class="about-text">
             <div class="about-title">Chilling with cats</div>
             <div class="about-desc">
@@ -78,7 +80,7 @@
               plan on adopting (at least)
               <span class="text-underline-dotted"
                 ><a
-                  href="https://www.youtube.com/watch?v=QafNGhmZeQA"
+                  href="https://www.youtube.com/watch?v=bifo-aNq50o"
                   target="_blank"
                   >two kittens</a
                 ></span
@@ -92,7 +94,7 @@
             </div>
           </div>
         </li>
-        <li class="about-section">
+        <li class="about-section reveal">
           <div class="about-text">
             <div class="about-title">Watching movies and TV</div>
             <div class="about-desc">
@@ -114,7 +116,7 @@
           </div>
         </li>
         <li class="about-section">
-          <div class="about-text">
+          <div class="about-text reveal">
             <div class="about-title">Gaming with the bois</div>
             <div class="about-desc">
               I peaked Challenger and played top lane for
@@ -128,11 +130,11 @@
               of my favourite games include:
             </div>
           </div>
-          <div class="about-img">
+          <div class="about-img reveal">
             <img class="about-img-rectangle" src="img/ssbm-chars.png" />
             <div class="about-img-desc">My Super Smash Bros. Melee mains.</div>
           </div>
-          <div class="about-details">
+          <div class="about-details reveal">
             GBA — Kirby & the Amazing Mirror, Mario vs. Donkey Kong, Pokémon
             RSE, TMNT<br />DS — Kirby SSU, Mario & Luigi: Bowser’s Inside Story,
             MKDS, Pokémon DPPt, Spectrobes<br />PSP — Crisis Core: Final Fantasy
@@ -148,7 +150,7 @@
             MapleStory, Minecraft, The Binding of Isaac
           </div>
         </li>
-        <li class="about-section">
+        <li class="about-section reveal">
           <div class="about-text">
             <div class="about-title">Vibing to bangers</div>
             <div class="about-desc">
@@ -185,10 +187,30 @@
           </li>
         </ul>
         <div class="footer-text">
-          Designed and developed by © 2023 Christopher Ho — with lots of Haribo
-          gummy bears. 🧸
+          Designed and developed by © 2023 Christopher Ho — made with lots of
+          Haribo gummy bears. 🧸
         </div>
       </div>
     </div>
+
+    <script type="text/javascript">
+      window.addEventListener("scroll", reveal);
+
+      function reveal() {
+        var reveals = document.querySelectorAll(".reveal");
+
+        for (var i = 0; i < reveals.length; i++) {
+          var windowheight = window.innerHeight;
+          var revealtop = reveals[i].getBoundingClientRect().top;
+          var revealpoint = 150;
+
+          if (revealtop < windowheight - revealpoint) {
+            reveals[i].classList.add("active");
+          } else {
+            reveals[i].classList.remove("active");
+          }
+        }
+      }
+    </script>
   </body>
 </html>

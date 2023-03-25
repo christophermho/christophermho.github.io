@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Christopher Ho</title>
+    <title>TD Lab — Christopher Ho</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" href="img/ch-icon.png" />
@@ -10,6 +10,10 @@
       rel="stylesheet"
       integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
       crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
     <link rel="stylesheet" href="css/main.css" />
     <link
@@ -36,7 +40,7 @@
         </ul>
       </nav>
     </div>
-    <div class="internship web-thin">
+    <div class="internship web-thin animate__animated animate__fadeInUp">
       <div class="internship-title">
         <span class="color-green font-bold">TD Lab</span
         ><span class="color-black"> Internship</span>
@@ -61,197 +65,231 @@
         </li>
       </ul>
     </div>
-    <div class="internship-title-img-td-lab">
-      <img class="title-mockup-td-lab" src="img/td-lab-title-mockup.png" />
+    <div
+      class="internship-title-img-td-lab animate__animated animate__fadeInUp"
+    >
+      <img
+        class="title-mockup-td-lab animate__animated animate__fadeInUp"
+        src="img/td-lab-title-mockup.png"
+      />
     </div>
     <div class="content web-thin">
-      <div class="content-title font-bold">Context</div>
-      <div class="content-text-last">
-        TD Lab is an innovation workspace within TD Bank, exploring emerging
-        tech & customer experiences.
-        <span class="text-underline-dotted"
-          ><a href="https://www.youtube.com/watch?v=7EdZ_cB1fCA" target="_blank"
-            >During my internship</a
-          ></span
-        >, I led the design of a mobile app, Newcomer to Canada, that assists
-        immigrants settling in — by teaching them about cultural differences
-        between their home country and Canada.
-      </div>
-      <div class="content-title font-bold">Problem</div>
-      <div class="content-text">
-        TD Bank’s Everyday Banking team presented our lab with the opportunity
-        statement below:
-      </div>
-      <div
-        class="content-text-last font-italicize text-align-center content-highlight-td-lab"
-      >
-        “Canada is expected to welcome 1 million new permanent residents over
-        the next 3 years. How might we develop a new digital experience to
-        incentivize these residents to make TD Bank their bank of choice?”
-      </div>
-      <div class="content-title font-bold">Goal</div>
-      <ul class="content-text content-highlight-td-lab">
-        <span class="font-bold">Canadian Newcomers</span>
-        <li class="bullet-point">
-          To have a stress-free immigration process, including opening a
-          Canadian banking account
-        </li>
-        <span class="font-bold">TD Bank</span>
-        <li class="bullet-point">
-          To ease the immigration process and gain more customers (i.e. open
-          more bank accounts)
-        </li>
-      </ul>
-      <div class="content-text">
-        A design sprint was held to scope the project. We researched existing
-        competition, mapped the journey of Canadian newcomers, selected primary
-        users, and brainstormed potential solutions by sketching wireframes and
-        facilitating team discussion.
-      </div>
-      <img class="content-img" src="img/td-lab-user-journey.png" />
-      <div class="content-title font-bold">Competitive Analysis</div>
-      <div class="content-text-last">
-        To better understand the types of products and services TD Bank and the
-        other Big Five banks (RBC, BMO, CIBC, and Scotiabank) were currently
-        offering to recent immigrants, we reviewed their newcomer packages on
-        their websites.
-      </div>
-      <img class="content-img" src="img/td-lab-comp-analysis.png" />
-      <ul class="content-text-last content-highlight-td-lab">
-        <span class="font-bold">Key Insights</span>
-        <li class="bullet-point">
-          Every bank offered a newcomer package with perks for opening an
-          account with them (ex. no monthly and/or international transfer fees,
-          cash bonuses, special credit cards, etc)
-        </li>
-        <li class="bullet-point">
-          Some banks also provided checklists for pre-arrival, just arrived, and
-          setting in
-        </li>
-      </ul>
-      <div class="content-title font-bold">Primary Users</div>
-      <div class="content-text">
-        Indian immigrants were chosen as the primary users for the following
-        reasons:
-      </div>
-      <ul class="content-text-last content-highlight-td-lab">
-        <li class="bullet-point">
-          They represent ~20% of all recent immigration to Canada
-        </li>
-        <li class="bullet-point">
-          They are the youngest on average and have the highest amount of
-          immigrants in their twenties and thirties — characteristics of a
-          population that are beginning their banking journey
-        </li>
-        <li class="bullet-point">
-          They place a heavy focus on large financial obligations (ex. buying a
-          vehicle or the birth of a child)
-        </li>
-      </ul>
-      <div class="content-title font-bold">Initial Design</div>
-      <div class="content-text-last">
-        The first iteration was an app that guided users step-by-step through
-        the immigration process. It would assist with tasks like completing
-        important documents, estimating expenses, booking flights, and more. By
-        completing tasks, users would earn points — redeemable for cash by
-        opening a TD Bank account.
-      </div>
-      <img class="content-img" src="img/td-lab-initial-design.png" />
-      <img class="content-img" src="img/td-lab-first-all.png" />
-      <div class="content-title font-bold">User Research</div>
-      <div class="content-text">
-        While the initial design seemed useful, we couldn’t be sure without
-        actually consulting the end-users. To ensure we were correctly
-        approaching the problem, I conducted user interviews with six Indian
-        immigrants who had moved to Canada within the last five years.
-      </div>
-      <ul class="content-text content-highlight-td-lab">
-        <span class="font-bold">Key Insights</span>
-        <li class="bullet-point">
-          If a user needed information about the Canadian immigration process,
-          they would simply do a quick google search
-        </li>
-        <li class="bullet-point">
-          The most trustworthy sources of information were Government of Canada
-          websites — it was unlikely any other sources would be used
-        </li>
-      </ul>
-      <div class="content-text-last">
-        In other words, there was little reason for users to download a
-        non-Government of Canada app to find information that was more
-        accessible and trustworthy through a couple of clicks. Additionally,
-        providing immigration information could pose liability problems if it
-        was not constantly accurate and updated.
-      </div>
-      <div class="content-title font-bold">A Step Back</div>
-      <div class="content-text-last">
-        With these findings, we decided to re-evaluate our approach by
-        redefining the product. We needed to create a product that was more
-        casual, but still provided relevant and useful information — effectively
-        differentiating itself from the existing competition.
-      </div>
-      <div class="content-title font-bold">New Design</div>
-      <div class="content-text-last">
-        Enter the next iteration, a mobile app that taught users about the
-        cultural differences between their home country and Canada. A customized
-        experience is created by providing tailored information for the user
-        based on their home country and current location. Like the first
-        iteration, there would be a rewards system to earn points that could be
-        redeemed for cash by opening a TD Bank account.
-      </div>
-      <img class="content-img" src="img/td-lab-new-design.png" />
-      <div class="content-text-last">
-        Every day Canadian newcomers experience several pain points related to
-        niche topics they haven't learned about. For example, "How much should I
-        tip in Canada? What even is tipping? Why is milk bagged?" Many newcomers
-        don’t know what they don’t know and that isn't easy to search for. By
-        providing information on these niche topics (i.e. cultural differences),
-        we can alleviate these daily difficulties, making the move to Canada
-        easy, welcoming, and stress-free.
-      </div>
-      <div class="content-title font-bold">Usability Testing</div>
-      <div class="content-text">
-        After designing the UI and a high-fidelity prototype, it was time to
-        validate the idea. I usability tested the app with same six Indian
-        immigrants from the original user testing.
-      </div>
-      <ul class="content-text content-highlight-td-lab">
-        <span class="font-bold">Key Insights</span>
-        <li class="bullet-point">
-          The most important topics in order: Laws, Finance, and Housing
-        </li>
-        <li class="bullet-point">
-          The least important topics: Entertainment and Sports
-        </li>
-        <li class="bullet-point">
-          Users wanted to receive reccomendations (ex. suggesting nearby places
-          of worship)
-        </li>
-      </ul>
-      <div class="content-text-last">
-        Overall, user feedback of the app was positive — several users mentioned
-        that if the app existed when they had first moved to Canada, they would
-        have downloaded and used it. They also thought the opportunity to earn
-        and redeem points for cash was a great incentive to invest time in the
-        app, and eventually open a TD Bank account. Users also mentioned many
-        personal anecdotes regarding niche things they didn't know about when
-        they immigrated, so we knew the concept showed real value.
-      </div>
-      <div class="content-title font-bold">Final Design Changes</div>
-      <div class="content-text">
-        Incorporating feedback from the usability testing interviews, the final
-        iteration was improved upon.
-      </div>
-      <ul class="content-text-last content-highlight-td-lab">
-        <span class="font-bold">Final Additions</span>
-        <li class="bullet-point">Profile</li>
-        <li class="bullet-point">Onboarding and authentication</li>
-        <li class="bullet-point">
-          A more in-depth rewards system (i.e. more ways to earn points/cash)
-        </li>
-      </ul>
-      <img class="content-img" src="img/td-lab-final-design.png" />
-      <img class="content-img-final" src="img/td-lab-final-all.png" />
+      <section class="reveal">
+        <div class="content-title font-bold">Context</div>
+        <div class="content-text-last">
+          TD Lab is an innovation workspace within TD Bank, exploring emerging
+          tech & customer experiences.
+          <span class="text-underline-dotted"
+            ><a
+              href="https://www.youtube.com/watch?v=7EdZ_cB1fCA"
+              target="_blank"
+              >During my internship</a
+            ></span
+          >, I led the design of a mobile app, Newcomer to Canada, that assists
+          immigrants settling in — by teaching them about cultural differences
+          between their home country and Canada.
+        </div>
+      </section>
+      <section class="reveal">
+        <div class="content-title font-bold">Problem</div>
+        <div class="content-text">
+          TD Bank’s Everyday Banking team presented our lab with the opportunity
+          statement below:
+        </div>
+        <div
+          class="content-text-last font-italicize text-align-center content-highlight-td-lab"
+        >
+          “Canada is expected to welcome 1 million new permanent residents over
+          the next 3 years. How might we develop a new digital experience to
+          incentivize these residents to make TD Bank their bank of choice?”
+        </div>
+      </section>
+      <section class="reveal">
+        <div class="content-title font-bold">Goal</div>
+        <ul class="content-text content-highlight-td-lab">
+          <span class="font-bold">Canadian Newcomers</span>
+          <li class="bullet-point">
+            To have a stress-free immigration process, including opening a
+            Canadian banking account
+          </li>
+          <span class="font-bold">TD Bank</span>
+          <li class="bullet-point">
+            To ease the immigration process and gain more customers (i.e. open
+            more bank accounts)
+          </li>
+        </ul>
+        <div class="content-text">
+          A design sprint was held to scope the project. We researched existing
+          competition, mapped the journey of Canadian newcomers, selected
+          primary users, and brainstormed potential solutions by sketching
+          wireframes and facilitating team discussion.
+        </div>
+      </section>
+      <img class="content-img reveal" src="img/td-lab-user-journey.png" />
+      <section class="reveal">
+        <div class="content-title font-bold">Competitive Analysis</div>
+        <div class="content-text-last">
+          To better understand the types of products and services TD Bank and
+          the other Big Five banks (RBC, BMO, CIBC, and Scotiabank) were
+          currently offering to recent immigrants, we reviewed their newcomer
+          packages on their websites.
+        </div>
+      </section>
+      <section class="reveal">
+        <img class="content-img" src="img/td-lab-comp-analysis.png" />
+        <ul class="content-text-last content-highlight-td-lab">
+          <span class="font-bold">Key Insights</span>
+          <li class="bullet-point">
+            Every bank offered a newcomer package with perks for opening an
+            account with them (ex. no monthly and/or international transfer
+            fees, cash bonuses, special credit cards, etc)
+          </li>
+          <li class="bullet-point">
+            Some banks also provided checklists for pre-arrival, just arrived,
+            and setting in
+          </li>
+        </ul>
+      </section>
+      <section class="reveal">
+        <div class="content-title font-bold">Primary Users</div>
+        <div class="content-text">
+          Indian immigrants were chosen as the primary users for the following
+          reasons:
+        </div>
+        <ul class="content-text-last content-highlight-td-lab">
+          <li class="bullet-point">
+            They represent ~20% of all recent immigration to Canada
+          </li>
+          <li class="bullet-point">
+            They are the youngest on average and have the highest amount of
+            immigrants in their twenties and thirties — characteristics of a
+            population that are beginning their banking journey
+          </li>
+          <li class="bullet-point">
+            They place a heavy focus on large financial obligations (ex. buying
+            a vehicle or the birth of a child)
+          </li>
+        </ul>
+      </section>
+      <section class="reveal">
+        <div class="content-title font-bold">Initial Design</div>
+        <div class="content-text-last">
+          The first iteration was an app that guided users step-by-step through
+          the immigration process. It would assist with tasks like completing
+          important documents, estimating expenses, booking flights, and more.
+          By completing tasks, users would earn points — redeemable for cash by
+          opening a TD Bank account.
+        </div>
+      </section>
+      <img class="content-img reveal" src="img/td-lab-initial-design.png" />
+      <img class="content-img reveal" src="img/td-lab-first-all.png" />
+      <section class="reveal">
+        <div class="content-title font-bold">User Research</div>
+        <div class="content-text">
+          While the initial design seemed useful, we couldn’t be sure without
+          actually consulting the end-users. To ensure we were correctly
+          approaching the problem, I conducted user interviews with six Indian
+          immigrants who had moved to Canada within the last five years.
+        </div>
+        <ul class="content-text content-highlight-td-lab">
+          <span class="font-bold">Key Insights</span>
+          <li class="bullet-point">
+            If a user needed information about the Canadian immigration process,
+            they would simply do a quick google search
+          </li>
+          <li class="bullet-point">
+            The most trustworthy sources of information were Government of
+            Canada websites — it was unlikely any other sources would be used
+          </li>
+        </ul>
+        <div class="content-text-last">
+          In other words, there was little reason for users to download a
+          non-Government of Canada app to find information that was more
+          accessible and trustworthy through a couple of clicks. Additionally,
+          providing immigration information could pose liability problems if it
+          was not constantly accurate and updated.
+        </div>
+      </section>
+      <section class="reveal">
+        <div class="content-title font-bold">A Step Back</div>
+        <div class="content-text-last">
+          With these findings, we decided to re-evaluate our approach by
+          redefining the product. We needed to create a product that was more
+          casual, but still provided relevant and useful information —
+          effectively differentiating itself from the existing competition.
+        </div>
+      </section>
+      <section class="reveal">
+        <div class="content-title font-bold">New Design</div>
+        <div class="content-text-last">
+          Enter the next iteration, a mobile app that taught users about the
+          cultural differences between their home country and Canada. A
+          customized experience is created by providing tailored information for
+          the user based on their home country and current location. Like the
+          first iteration, there would be a rewards system to earn points that
+          could be redeemed for cash by opening a TD Bank account.
+        </div>
+      </section>
+      <section class="reveal">
+        <img class="content-img" src="img/td-lab-new-design.png" />
+        <div class="content-text-last">
+          Every day Canadian newcomers experience several pain points related to
+          niche topics they haven't learned about. For example, "How much should
+          I tip in Canada? What even is tipping? Why is milk bagged?" Many
+          newcomers don’t know what they don’t know and that isn't easy to
+          search for. By providing information on these niche topics (i.e.
+          cultural differences), we can alleviate these daily difficulties,
+          making the move to Canada easy, welcoming, and stress-free.
+        </div>
+      </section>
+      <section class="reveal">
+        <div class="content-title font-bold">Usability Testing</div>
+        <div class="content-text">
+          After designing the UI and a high-fidelity prototype, it was time to
+          validate the idea. I usability tested the app with same six Indian
+          immigrants from the original user testing.
+        </div>
+        <ul class="content-text content-highlight-td-lab">
+          <span class="font-bold">Key Insights</span>
+          <li class="bullet-point">
+            The most important topics in order: Laws, Finance, and Housing
+          </li>
+          <li class="bullet-point">
+            The least important topics: Entertainment and Sports
+          </li>
+          <li class="bullet-point">
+            Users wanted to receive reccomendations (ex. suggesting nearby
+            places of worship)
+          </li>
+        </ul>
+        <div class="content-text-last">
+          Overall, user feedback of the app was positive — several users
+          mentioned that if the app existed when they had first moved to Canada,
+          they would have downloaded and used it. They also thought the
+          opportunity to earn and redeem points for cash was a great incentive
+          to invest time in the app, and eventually open a TD Bank account.
+          Users also mentioned many personal anecdotes regarding niche things
+          they didn't know about when they immigrated, so we knew the concept
+          showed real value.
+        </div>
+      </section>
+      <section class="reveal">
+        <div class="content-title font-bold">Final Design Changes</div>
+        <div class="content-text">
+          Incorporating feedback from the usability testing interviews, the
+          final iteration was improved upon.
+        </div>
+        <ul class="content-text-last content-highlight-td-lab">
+          <span class="font-bold">Final Additions</span>
+          <li class="bullet-point">Profile</li>
+          <li class="bullet-point">Onboarding and authentication</li>
+          <li class="bullet-point">
+            A more in-depth rewards system (i.e. more ways to earn points/cash)
+          </li>
+        </ul>
+      </section>
+      <img class="content-img reveal" src="img/td-lab-final-design.png" />
+      <img class="content-img-final reveal" src="img/td-lab-final-all.png" />
     </div>
     <div class="work-up-next">
       <div class="web-thin">
@@ -295,10 +333,32 @@
           </li>
         </ul>
         <div class="footer-text">
-          Designed and developed by © 2023 Christopher Ho — with lots of Haribo
-          gummy bears. 🧸
+          Designed and developed by © 2023 Christopher Ho — made with lots of
+          Haribo gummy bears. 🧸
         </div>
       </div>
     </div>
+
+    <a class="go-top-btn" href="#"> <i class="fas fa-arrow-up"></i></a>
+
+    <script type="text/javascript">
+      window.addEventListener("scroll", reveal);
+
+      function reveal() {
+        var reveals = document.querySelectorAll(".reveal");
+
+        for (var i = 0; i < reveals.length; i++) {
+          var windowheight = window.innerHeight;
+          var revealtop = reveals[i].getBoundingClientRect().top;
+          var revealpoint = 150;
+
+          if (revealtop < windowheight - revealpoint) {
+            reveals[i].classList.add("active");
+          } else {
+            reveals[i].classList.remove("active");
+          }
+        }
+      }
+    </script>
   </body>
 </html>

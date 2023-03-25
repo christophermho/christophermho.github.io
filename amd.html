@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Christopher Ho</title>
+    <title>AMD — Christopher Ho</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" href="img/ch-icon.png" />
@@ -10,6 +10,10 @@
       rel="stylesheet"
       integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
       crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
     <link rel="stylesheet" href="css/main.css" />
     <link
@@ -36,7 +40,7 @@
         </ul>
       </nav>
     </div>
-    <div class="internship web-thin">
+    <div class="internship web-thin animate__animated animate__fadeInUp">
       <div class="internship-title">
         <span class="color-black font-bold">Advanced Micro Devices</span
         ><span class="color-black"> Internship</span>
@@ -59,141 +63,167 @@
         </li>
       </ul>
     </div>
-    <div class="internship-title-img-amd">
-      <img class="title-mockup-amd" src="img/amd-title-mockup.png" />
+    <div class="internship-title-img-amd animate__animated animate__fadeInUp">
+      <img
+        class="title-mockup-amd animate__animated animate__fadeInUp"
+        src="img/amd-title-mockup.png"
+      />
     </div>
     <div class="content web-thin">
-      <div class="content-title font-bold">Context</div>
-      <div class="content-text-last">
-        Radeon Software is a device driver and utility software package for
-        AMD’s Radeon graphics cards and APUs. It includes features like game
-        profile management, performance monitoring, recording/streaming, and
-        more.
-        <!-- Every Christmas, AMD releases a new driver that introduces several new
+      <section class="reveal">
+        <div class="content-title font-bold">Context</div>
+        <div class="content-text-last">
+          Radeon Software is a device driver and utility software package for
+          AMD’s Radeon graphics cards and APUs. It includes features like game
+          profile management, performance monitoring, recording/streaming, and
+          more.
+          <!-- Every Christmas, AMD releases a new driver that introduces several new
         software features, adding to the functionality of AMD Radeon graphics
         cards. -->
-        During my internship, I worked on the release of Radeon Software:
-        Adrenaline 2020 Edition (RSA 2020). I focused on improving the UX by
-        designing and usability testing a high fidelity prototype.
-      </div>
-      <div class="content-title font-bold">Current State</div>
-      <div class="content-text-last">
-        Prior to the release of RSA 2020, Radeon Software was known as Radeon
-        Settings (Adrenaline 2019 Edition). This version had a UI that had been
-        used for years — users were extremely familiar with the current
-        information architecture and navigation.
-      </div>
-      <img class="content-img" src="img/amd-current-state.png" />
-      <div class="content-title font-bold">Future State</div>
-      <div class="content-text-last">
-        In the the upcoming RSA 2020 driver update, Radeon Software would have a
-        completely redesigned UI and a number of new innovative features like
-        Radeon Boost, Radeon Anti-Lag, Radeon Image Sharpening, Radeon Integer
-        Display Scaling, AMD Link Streaming, and Integrated Web Browsing.
-      </div>
-      <img class="content-img" src="img/amd-future-state.png" />
-      <div class="content-text-last">
-        While I designed several screens for the RSA 2020 driver update, the
-        majority of the UI was already complete when I began my internship.
-        However, the UX of the new design had not been tested yet — using the
-        mockups, it was my job to create a prototype and conduct usability
-        testing. While the future state was more modern and sleek, what mattered
-        was if it was actually intuitive or not. Would users have an easy time
-        understanding and navigating the new UI, let alone opening it in the
-        first place?
-      </div>
-      <div class="content-title font-bold">User Flows</div>
-      <div class="content-text">
-        Since RSA 2020 included several new features, it was necessary to design
-        user flows for both new and existing features. It was also important to
-        include a variety of tasks for users of different experience levels with
-        gaming and Radeon Software. How would the experience differ for novice
-        vs. experienced users? With these notes in mind, I designed the
-        following user flows and created a high fidelity prototype accordingly —
-        complete with animations and overlays.
-      </div>
-      <ol class="content-text-last content-highlight-amd">
-        <span class="font-bold">User Flows/Tasks</span>
-        <li class="bullet-point">Open Radeon Software</li>
-        <li class="bullet-point">Launch a game (Gears 5)</li>
-        <li class="bullet-point">Open Radeon overlay and sidebar</li>
-        <li class="bullet-point">Check software and hardware settings</li>
-        <li class="bullet-point">Enable/disable Radeon FreeSync</li>
-        <li class="bullet-point">Enable and/or modify Radeon Boost</li>
-        <li class="bullet-point">Enable Radeon performance metrics overlay</li>
-        <li class="bullet-point">Open performance tools and overclock GPU</li>
-        <li class="bullet-point">Open performance tuning, modify fan speed</li>
-        <li class="bullet-point">Open web browser</li>
-        <li class="bullet-point">Check for an update</li>
-        <li class="bullet-point">Change default settings profile</li>
-        <li class="bullet-point">Open and change video settings</li>
-        <li class="bullet-point">Create a new scene for streaming</li>
-        <li class="bullet-point">Start a streaming session</li>
-        <li class="bullet-point">Enable and capture an instant replay</li>
-        <li class="bullet-point">Enable and record a video of desktop</li>
-        <li class="bullet-point">Edit and trim a video</li>
-        <li class="bullet-point">Upload and share a video</li>
-      </ol>
-      <img class="content-img" src="img/amd-user-flows.png" />
-      <div class="content-title font-bold">Usability Testing</div>
-      <div class="content-text">
-        After creating the prototype, it was time to test the new Radeon
-        Software design. To properly synthesize the usability testing data, it
-        was neccessary to know what types of users were being interviewed. To
-        gain some context, I started by asking the interviewees/users a couple
-        of screening questions:
-      </div>
-      <ul class="content-text-last content-highlight-amd">
-        <span class="font-bold font-bold">Screening Questions</span>
-        <li class="bullet-point">
-          How experienced are you with Radeon Settings/Software?
-        </li>
-        <li class="bullet-point">
-          Are you a Gamer, eSports Enthusiast, and/or Content Creator? (can
-          check all or none)
-        </li>
-        <li class="bullet-point">
-          How many hours do you spend gaming in a week? (Never, 1-10, 11-20,
-          21+)
-        </li>
-      </ul>
-      <video width="100%" height="auto-resizable-iframe" autoplay muted loop>
-        <source src="img/amd-usability-test.mp4" type="video/mp4" />
-      </video>
-      <div class="content-text-last"></div>
-      <ul class="content-text-last content-highlight-amd">
-        <span class="font-bold">Key Insights</span>
-        <li class="bullet-point">
-          The UI was more smooth and visually appealing, but took up an
-          uncessary amount of space
-        </li>
-        <li class="bullet-point">
-          The UI was mostly easy to navigate, but felt a bit overcomplicated and
-          layered with the exessive number of nested menus
-        </li>
-        <li class="bullet-point">
-          The majority of users were willing to learn and get used to the new
-          design, with a few reluctant users preferring the previous design
-        </li>
-        <li class="bullet-point">
-          The new features (i.e. Radeon Boost/Anti-Lag/Image Sharpening/Integer
-          Display Scaling) were highly anticipated by all users
-        </li>
-        <li class="bullet-point">
-          There were some concerns with 'bloatware' using excessive RAM (ex.
-          questioning the necessity of an integrated web browser)
-        </li>
-      </ul>
-      <div class="content-title font-bold">Results</div>
-      <div class="content-text-last">
-        Due to product deadlines, RSA 2020 was unfortunately released before
-        changes could be implemented. However, subsequent releases of Radeon
-        Software have received updates based on feedback from both usability
-        testing and actual use. Radeon Software is currently in its 2022 release
-        and is used by millions of gamers around the globe. Below is an
-        introductory video for the initial release of RSA 2020.
-      </div>
-      <div class="content-text-last">
+          During my internship, I worked on the release of Radeon Software:
+          Adrenaline 2020 Edition (RSA 2020). I focused on improving the UX by
+          designing and usability testing a high fidelity prototype.
+        </div>
+      </section>
+      <section class="reveal">
+        <div class="content-title font-bold">Current State</div>
+        <div class="content-text-last">
+          Prior to the release of RSA 2020, Radeon Software was known as Radeon
+          Settings (Adrenaline 2019 Edition). This version had a UI that had
+          been used for years — users were extremely familiar with the current
+          information architecture and navigation.
+        </div>
+      </section>
+      <img class="content-img reveal" src="img/amd-current-state.png" />
+      <section class="reveal">
+        <div class="content-title font-bold">Future State</div>
+        <div class="content-text-last">
+          In the the upcoming RSA 2020 driver update, Radeon Software would have
+          a completely redesigned UI and a number of new innovative features
+          like Radeon Boost, Radeon Anti-Lag, Radeon Image Sharpening, Radeon
+          Integer Display Scaling, AMD Link Streaming, and Integrated Web
+          Browsing.
+        </div>
+      </section>
+      <section class="reveal">
+        <img class="content-img" src="img/amd-future-state.png" />
+        <div class="content-text-last">
+          While I designed several screens for the RSA 2020 driver update, the
+          majority of the UI was already complete when I began my internship.
+          However, the UX of the new design had not been tested yet — using the
+          mockups, it was my job to create a prototype and conduct usability
+          testing. While the future state was more modern and sleek, what
+          mattered was if it was actually intuitive or not. Would users have an
+          easy time understanding and navigating the new UI, let alone opening
+          it in the first place?
+        </div>
+      </section>
+      <section class="reveal">
+        <div class="content-title font-bold">User Flows</div>
+        <div class="content-text">
+          Since RSA 2020 included several new features, it was necessary to
+          design user flows for both new and existing features. It was also
+          important to include a variety of tasks for users of different
+          experience levels with gaming and Radeon Software. How would the
+          experience differ for novice vs. experienced users? With these notes
+          in mind, I designed the following user flows and created a high
+          fidelity prototype accordingly — complete with animations and
+          overlays.
+        </div>
+        <ol class="content-text-last content-highlight-amd">
+          <span class="font-bold">User Flows/Tasks</span>
+          <li class="bullet-point">Open Radeon Software</li>
+          <li class="bullet-point">Launch a game (Gears 5)</li>
+          <li class="bullet-point">Open Radeon overlay and sidebar</li>
+          <li class="bullet-point">Check software and hardware settings</li>
+          <li class="bullet-point">Enable/disable Radeon FreeSync</li>
+          <li class="bullet-point">Enable and/or modify Radeon Boost</li>
+          <li class="bullet-point">
+            Enable Radeon performance metrics overlay
+          </li>
+          <li class="bullet-point">Open performance tools and overclock GPU</li>
+          <li class="bullet-point">
+            Open performance tuning, modify fan speed
+          </li>
+          <li class="bullet-point">Open web browser</li>
+          <li class="bullet-point">Check for an update</li>
+          <li class="bullet-point">Change default settings profile</li>
+          <li class="bullet-point">Open and change video settings</li>
+          <li class="bullet-point">Create a new scene for streaming</li>
+          <li class="bullet-point">Start a streaming session</li>
+          <li class="bullet-point">Enable and capture an instant replay</li>
+          <li class="bullet-point">Enable and record a video of desktop</li>
+          <li class="bullet-point">Edit and trim a video</li>
+          <li class="bullet-point">Upload and share a video</li>
+        </ol>
+      </section>
+      <img class="content-img reveal" src="img/amd-user-flows.png" />
+      <section class="reveal">
+        <div class="content-title font-bold">Usability Testing</div>
+        <div class="content-text">
+          After creating the prototype, it was time to test the new Radeon
+          Software design. To properly synthesize the usability testing data, it
+          was neccessary to know what types of users were being interviewed. To
+          gain some context, I started by asking the interviewees/users a couple
+          of screening questions:
+        </div>
+        <ul class="content-text-last content-highlight-amd">
+          <span class="font-bold font-bold">Screening Questions</span>
+          <li class="bullet-point">
+            How experienced are you with Radeon Settings/Software?
+          </li>
+          <li class="bullet-point">
+            Are you a Gamer, eSports Enthusiast, and/or Content Creator? (can
+            check all or none)
+          </li>
+          <li class="bullet-point">
+            How many hours do you spend gaming in a week? (Never, 1-10, 11-20,
+            21+)
+          </li>
+        </ul>
+      </section>
+      <section class="reveal">
+        <video width="100%" height="auto-resizable-iframe" autoplay muted loop>
+          <source src="img/amd-usability-test.mp4" type="video/mp4" />
+        </video>
+        <div class="content-text-last"></div>
+        <ul class="content-text-last content-highlight-amd">
+          <span class="font-bold">Key Insights</span>
+          <li class="bullet-point">
+            The UI was more smooth and visually appealing, but took up an
+            uncessary amount of space
+          </li>
+          <li class="bullet-point">
+            The UI was mostly easy to navigate, but felt a bit overcomplicated
+            and layered with the exessive number of nested menus
+          </li>
+          <li class="bullet-point">
+            The majority of users were willing to learn and get used to the new
+            design, with a few reluctant users preferring the previous design
+          </li>
+          <li class="bullet-point">
+            The new features (i.e. Radeon Boost/Anti-Lag/Image
+            Sharpening/Integer Display Scaling) were highly anticipated by all
+            users
+          </li>
+          <li class="bullet-point">
+            There were some concerns with 'bloatware' using excessive RAM (ex.
+            questioning the necessity of an integrated web browser)
+          </li>
+        </ul>
+      </section>
+      <section class="reveal">
+        <div class="content-title font-bold">Results</div>
+        <div class="content-text-last">
+          Due to product deadlines, RSA 2020 was unfortunately released before
+          changes could be implemented. However, subsequent releases of Radeon
+          Software have received updates based on feedback from both usability
+          testing and actual use. Radeon Software is currently in its 2022
+          release and is used by millions of gamers around the globe. Below is
+          an introductory video for the initial release of RSA 2020.
+        </div>
+      </section>
+      <div class="content-text-last reveal">
         <iframe
           class="auto-resizable-iframe"
           width="100%"
@@ -205,15 +235,18 @@
           allowfullscreen
         ></iframe>
       </div>
-      <div class="content-title font-bold">Design System</div>
-      <div class="content-text-last">
-        Another project I worked on was starting RSA 2020's first design system.
-        Given the recent creation of the driver's new UI, an internal design
-        system had not been implemented yet. I organized RSA 2020's design
-        components and assets into a single file to reduce redudancy and ensure
-        visual consistency across both desktop and mobile platforms.
-      </div>
-      <img class="content-img-final" src="img/amd-design-system.png" />
+      <section class="reveal">
+        <div class="content-title font-bold">Design System</div>
+        <div class="content-text-last">
+          Another project I worked on was starting RSA 2020's first design
+          system. Given the recent creation of the driver's new UI, an internal
+          design system had not been implemented yet. I organized RSA 2020's
+          design components and assets into a single file to reduce redudancy
+          and ensure visual consistency across both desktop and mobile
+          platforms.
+        </div>
+      </section>
+      <img class="content-img-final reveal" src="img/amd-design-system.png" />
     </div>
     <div class="work-up-next">
       <div class="web-thin">
@@ -257,10 +290,32 @@
           </li>
         </ul>
         <div class="footer-text">
-          Designed and developed by © 2023 Christopher Ho — with lots of Haribo
-          gummy bears. 🧸
+          Designed and developed by © 2023 Christopher Ho — made with lots of
+          Haribo gummy bears. 🧸
         </div>
       </div>
     </div>
+
+    <a class="go-top-btn" href="#"> <i class="fas fa-arrow-up"></i></a>
+
+    <script type="text/javascript">
+      window.addEventListener("scroll", reveal);
+
+      function reveal() {
+        var reveals = document.querySelectorAll(".reveal");
+
+        for (var i = 0; i < reveals.length; i++) {
+          var windowheight = window.innerHeight;
+          var revealtop = reveals[i].getBoundingClientRect().top;
+          var revealpoint = 150;
+
+          if (revealtop < windowheight - revealpoint) {
+            reveals[i].classList.add("active");
+          } else {
+            reveals[i].classList.remove("active");
+          }
+        }
+      }
+    </script>
   </body>
 </html>

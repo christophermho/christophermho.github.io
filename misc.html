@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Christopher Ho</title>
+    <title>Misc. — Christopher Ho</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" href="img/ch-icon.png" />
@@ -10,6 +10,10 @@
       rel="stylesheet"
       integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
       crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
     <link rel="stylesheet" href="css/main.css" />
     <link
@@ -36,7 +40,7 @@
         </ul>
       </nav>
     </div>
-    <div class="internship web-thin">
+    <div class="internship web-thin animate__animated animate__fadeInUp">
       <div class="internship-title">
         <span class="color-yellow font-bold">Miscellaneous</span
         ><span class="color-black"> Design</span>
@@ -44,26 +48,37 @@
     </div>
     <div class="content web-thin">
       <div class="content-text-last"></div>
-      <div class="content-title font-bold">Designing a Logo</div>
-      <div class="content-text-last">
-        A flat logo design for my client, Eric C, and his brand as a video
-        producer. Incorporates the client’s initials within a computer mouse.
-        The mouse is the main tool the client uses to produce, create, and edit
-        video content. Colour palette chosen based on the client’s favourite
-        colours.
-      </div>
-      <img class="content-img" src="img/misc-logo.png" />
+      <section class="animate__animated animate__fadeInUp">
+        <div
+          class="content-title font-bold animate__animated animate__fadeInUp"
+        >
+          Designing a Logo
+        </div>
+        <div class="content-text-last animate__animated animate__fadeInUp">
+          A flat logo design for my client, Eric C, and his brand as a video
+          producer. Incorporates the client’s initials within a computer mouse.
+          The mouse is the main tool the client uses to produce, create, and
+          edit video content. Colour palette chosen based on the client’s
+          favourite colours.
+        </div>
+        <img
+          class="content-img animate__animated animate__fadeInUp"
+          src="img/misc-logo.png"
+        />
+      </section>
       <div class="content-text-last"></div>
-      <div class="content-title font-bold">Crafting a Magazine</div>
-      <div class="content-text-last">
-        A simple magazine spread detailing my path from studying engineering to
-        design. The decision to transfer programs was not easy — I felt that if
-        transferred I was failing the expectations set by myself, family, and
-        friends. In hindsight, I wish I had done so earlier, but I was a victim
-        of the sunk cost fallacy.
-      </div>
+      <section class="reveal">
+        <div class="content-title font-bold">Crafting a Magazine</div>
+        <div class="content-text-last">
+          A simple magazine spread detailing my path from studying engineering
+          to design. The decision to transfer programs was not easy — I felt
+          that if transferred I was failing the expectations set by myself,
+          family, and friends. In hindsight, I wish I had done so earlier, but I
+          was a victim of the sunk cost fallacy.
+        </div>
+      </section>
       <div class="content-text-last"></div>
-      <img class="content-img-final" src="img/misc-magazine.png" />
+      <img class="content-img-final reveal" src="img/misc-magazine.png" />
     </div>
     <div class="work-up-next">
       <div class="web-thin">
@@ -107,10 +122,32 @@
           </li>
         </ul>
         <div class="footer-text">
-          Designed and developed by © 2023 Christopher Ho — with lots of Haribo
-          gummy bears. 🧸
+          Designed and developed by © 2023 Christopher Ho — made with lots of
+          Haribo gummy bears. 🧸
         </div>
       </div>
     </div>
+
+    <a class="go-top-btn" href="#"> <i class="fas fa-arrow-up"></i></a>
+
+    <script type="text/javascript">
+      window.addEventListener("scroll", reveal);
+
+      function reveal() {
+        var reveals = document.querySelectorAll(".reveal");
+
+        for (var i = 0; i < reveals.length; i++) {
+          var windowheight = window.innerHeight;
+          var revealtop = reveals[i].getBoundingClientRect().top;
+          var revealpoint = 150;
+
+          if (revealtop < windowheight - revealpoint) {
+            reveals[i].classList.add("active");
+          } else {
+            reveals[i].classList.remove("active");
+          }
+        }
+      }
+    </script>
   </body>
 </html>
