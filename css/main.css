@@ -14,37 +14,67 @@ a:hover {
 }
 
 body {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Inter", sans-serif;
+  /* font-family: "Open Sans", sans-serif; */
+  /* font-family: "Roboto", sans-serif; */
+  /* font-family: "Montserrat", sans-serif; */
+  font-weight: 300;
   margin: 0;
   box-sizing: border-box;
   color: #636363;
-  letter-spacing: -0.6px;
+  /* letter-spacing: -0.6px; */
 }
 
 /* STYLING */
 
+.black {
+  color: black;
+}
+
 .color-black {
   color: black;
+  font-family: "Montserrat", sans-serif;
+}
+
+.green {
+  color: #54b948;
 }
 
 .color-green {
   color: #54b948;
+  font-family: "Montserrat", sans-serif;
+}
+
+.blue {
+  color: #0051a5;
 }
 
 .color-blue {
   color: #0051a5;
+  font-family: "Montserrat", sans-serif;
+}
+
+.yellow {
+  color: #f1dc90;
 }
 
 .color-yellow {
   color: #f1dc90;
+  font-family: "Montserrat", sans-serif;
+}
+
+.bold {
+  font-weight: 700;
 }
 
 .font-bold {
   font-weight: 700;
+  font-family: "Montserrat", sans-serif;
 }
 
 .font-500 {
   font-weight: 500;
+  font-family: "Montserrat", sans-serif;
 }
 
 .font-italicize {
@@ -147,6 +177,7 @@ body {
 .about-title {
   font-weight: 700;
   font-size: 24px;
+  font-family: "Montserrat", sans-serif;
   color: black;
   margin-bottom: 24px;
 }
