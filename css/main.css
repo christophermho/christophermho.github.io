@@ -490,6 +490,33 @@ ol {
   padding-bottom: 64px;
 }
 
+.go-top-btn {
+  position: fixed;
+  width: 48px;
+  height: 48px;
+  background: #000000;
+  bottom: 48px;
+  right: 48px;
+
+  border-radius: 48px;
+  text-decoration: none;
+  text-align: center;
+  line-height: 50px;
+  color: white;
+  font-size: 20px;
+  transform: scale(1) translateY(0);
+  transition-duration: 0.3s;
+  /* box-shadow: 0 3px 10px rgb(0 0 0 / 50%); */
+}
+
+a.go-top-btn:hover {
+  color: white;
+  transform: scale(1) translateY(-6px);
+  background: #f1dc90;
+}
+
+
+
 /***********************
         DESKTOP  
 ***********************/
