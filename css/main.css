@@ -495,8 +495,8 @@ ol {
   width: 48px;
   height: 48px;
   background: #000000;
-  bottom: 48px;
-  right: 48px;
+  bottom: 16px;
+  right: 16px;
 
   border-radius: 48px;
   text-decoration: none;
@@ -514,8 +514,6 @@ a.go-top-btn:hover {
   transform: scale(1) translateY(-6px);
   background: #f1dc90;
 }
-
-
 
 /***********************
         DESKTOP  
