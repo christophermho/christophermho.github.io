@@ -19,7 +19,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Montserrat:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Karla:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
       rel="stylesheet"
     />
     <link
@@ -45,38 +45,34 @@
         <div
           class="intro-title color-black animate__animated animate__fadeInUp"
         >
-          Hi there! I’m Christopher Ho.
+          I'm Christopher Ho, a product designer
         </div>
         <div class="intro-desc animate__animated animate__fadeInUp">
-          I’m an aspiring product designer — currently studying Interaction
-          Design and Business at the University of Waterloo. In the past, I’ve
-          designed at
-          <span class="black text-underline-dotted"
+          Currently studying Interaction Design & Business at UWaterloo.
+          Previously at
+          <span class="black"
             ><a href="https://www.amd.com/en" target="_blank">AMD</a></span
           >,
-          <span class="green text-underline-dotted"
+          <span class="green"
             ><a href="https://tdlab.io/" target="_blank">TD Lab</a></span
           >, and
-          <span class="blue text-underline-dotted"
+          <span class="blue"
             ><a
               href="https://www.rbcroyalbank.com/personal.html"
               target="_blank"
               >RBC</a
             ></span
-          >. Right now, I'm looking for a summer 2023 product design or UX
-          research internship.
+          >.
         </div>
       </div>
-      <!-- <div class="view-work">
-        <a href="#work">⬇️ &nbsp&nbsp View work &nbsp&nbsp ⬇️</a>
-      </div> -->
     </div>
+
     <div class="work" id="work">
       <ul class="web-thin animate__animated animate__fadeInUp">
         <li class="card">
-          <a class="card-inner" href="amd.html">
+          <a class="card-container card-container-amd" href="amd.html">
             <div class="card-img card-amd">
-              <img class="logo-amd" src="img/logo-amd.png" />
+              <img class="logo-amd" src="img/amd-monitor-mockup.svg" />
             </div>
             <div class="card-text">
               <div>
@@ -84,21 +80,35 @@
                   AMD Internship
                 </div>
                 <div class="card-desc">
-                  I worked on Radeon Software: Adrenaline 2020 Edition.
+                  Overhauling Radeon Settings into Radeon Software 2020
                 </div>
-                <div class="card-tags black">
-                  INTERACTION DESIGN • PROTOTYPING • USABILITY TESTING
-                </div>
-              </div>
-              <div class="view-more">
-                View more &nbsp
-                <i class="fa fa-angle-right"></i>
+                <div class="card-tags black">INTERACTION DESIGN</div>
+                <div class="card-tags black">PROTOTYPING</div>
+                <div class="card-tags black">USABILITY TESTING</div>
               </div>
             </div>
           </a>
         </li>
         <li class="card">
-          <a class="card-inner" href="td-lab.html">
+          <a class="card-container card-container-rf" href="reframe.html">
+            <div class="card-img card-rf">
+              <img class="logo-rf" src="img/rf-card-mockup.png" />
+            </div>
+            <div class="card-text">
+              <div>
+                <div class="card-title color-black font-bold">Reframe</div>
+                <div class="card-desc">
+                  Utilizing the framing effect to make fitness manageable
+                </div>
+                <div class="card-tags black">PERSONAL PROJECT</div>
+                <div class="card-tags black">DESIGN PROCESS</div>
+                <div class="card-tags black">PRODUCT THINKING</div>
+              </div>
+            </div>
+          </a>
+        </li>
+        <!-- <li class="card">
+          <a class="card-container card-container-td-lab" href="td-lab.html">
             <div class="card-img card-td-lab">
               <img class="logo-td-lab" src="img/logo-td-lab.png" />
             </div>
@@ -108,21 +118,17 @@
                   TD Lab Internship
                 </div>
                 <div class="card-desc">
-                  I designed an app to help Canadian newcomers settle in.
+                  Teaching Canadian newcomers about cultural differences
                 </div>
-                <div class="card-tags black">
-                  PRODUCT STRATEGY • USER RESEARCH • UI/UX DESIGN
-                </div>
-              </div>
-              <div class="view-more">
-                View more &nbsp
-                <i class="fa fa-angle-right"></i>
+                <div class="card-tags black">PRODUCT STRATEGY</div>
+                <div class="card-tags black">USER RESEARCH</div>
+                <div class="card-tags black">UI/UX DESIGN</div>
               </div>
             </div>
           </a>
         </li>
         <li class="card">
-          <a class="card-inner" href="rbc.html">
+          <a class="card-container card-container-rbc" href="rbc.html">
             <div class="card-img card-rbc">
               <img class="logo-rbc" src="img/logo-rbc.png" />
             </div>
@@ -132,43 +138,38 @@
                   RBC Internship
                 </div>
                 <div class="card-desc">
-                  A summary of my experience at Royal Bank of Canada.
+                  A summary of my experience at Royal Bank of Canada
                 </div>
-                <div class="card-tags black">
-                  UI/UX DESIGN • RAPID PROTOTYPING • WORKSHOP FACILITATION
-                </div>
-              </div>
-              <div class="view-more">
-                View more &nbsp
-                <i class="fa fa-angle-right"></i>
+                <div class="card-tags black">UI/UX DESIGN</div>
+                <div class="card-tags black">RAPID PROTOTYPING</div>
+                <div class="card-tags black">WORKSHOP FACILITATION</div>
               </div>
             </div>
           </a>
-        </li>
+        </li> -->
         <li class="card">
-          <a class="card-inner" href="misc.html">
+          <a class="card-container card-container-misc" href="misc.html">
             <div class="card-img-cat card-misc">
               <img class="logo-misc cat-misc" src="img/logo-misc.png" />
             </div>
             <div class="card-text">
               <div>
-                <div class="card-title color-black font-bold">Misc Design</div>
+                <div class="card-title color-black font-bold">
+                  Misc Projects
+                </div>
                 <div class="card-desc">
-                  A collection of various passion and school projects.
+                  A collection of various passion and school projects
                 </div>
-                <div class="card-tags black">
-                  UI/UX DESIGN • GRAPHIC DESIGN • VISUAL DESIGN
-                </div>
-              </div>
-              <div class="view-more">
-                View more &nbsp
-                <i class="fa fa-angle-right"></i>
+                <div class="card-tags black">UI/UX DESIGN</div>
+                <div class="card-tags black">GRAPHIC DESIGN</div>
+                <div class="card-tags black">VISUAL DESIGN</div>
               </div>
             </div>
           </a>
         </li>
       </ul>
     </div>
+
     <div class="footer">
       <div class="web-thin">
         <ul class="footer-list">
@@ -182,33 +183,13 @@
           </li>
         </ul>
         <div class="footer-text">
-          Designed and developed by © 2023 Christopher Ho — made with lots of
-          Haribo gummy bears. 🧸
+          Designed and coded by © 2023 Christopher Ho — made with lots of Haribo
+          gummy bears 🧸
           <!-- <br />
           <br />
           © Christopher Ho 2023 -->
         </div>
       </div>
     </div>
-
-    <script type="text/javascript">
-      window.addEventListener("scroll", reveal);
-
-      function reveal() {
-        var reveals = document.querySelectorAll(".reveal");
-
-        for (var i = 0; i < reveals.length; i++) {
-          var windowheight = window.innerHeight;
-          var revealtop = reveals[i].getBoundingClientRect().top;
-          var revealpoint = 150;
-
-          if (revealtop < windowheight - revealpoint) {
-            reveals[i].classList.add("active");
-          } else {
-            reveals[i].classList.remove("active");
-          }
-        }
-      }
-    </script>
   </body>
 </html>
