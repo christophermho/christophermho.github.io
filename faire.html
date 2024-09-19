@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Faire — Christopher</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="img/ch-icon.png" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Manrope:wght@200..800&family=Karla:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="header">
+      <div class="progress-container">
+        <div class="progress-bar-faire" id="progressBar"></div>
+      </div>
+    </div>
+    <div class="landing-initial web-thin">
+      <nav class="nav">
+        <a class="nav-icon color-black" href="index.html">Ch.</a>
+        <ul class="nav-list">
+          <li class="nav-list-item black">
+            <a href="index.html">Work</a>
+          </li>
+          <li class="nav-list-item"><a href="about.html">About</a></li>
+          <li class="nav-list-item">
+            <a href="Christopher_Ho_Resume.pdf" target="_blank">Resume</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div class="internship web-thin animate__animated animate__fadeInUp">
+      <div class="internship-title">
+        <span class="color-black font-bold">
+          Revamping Faire's Help Center search and navigation experience
+        </span>
+      </div>
+      <ul>
+        <li class="internship-title-desc">
+          <span class="black font-600">Role •</span> Product Design Intern at
+          Faire
+        </li>
+        <li class="internship-title-desc">
+          <span class="black font-600">Team •</span>
+          <span class="black">PM:</span> Wintha K,
+          <span class="black">Eng:</span> Bo Z,
+          <span class="black">S&A:</span> Grace D,
+          <span class="black">Design:</span> Jess B, Christopher H
+        </li>
+        <li class="internship-title-desc">
+          <span class="black font-600">Time •</span> 10 weeks, Summer 2024
+        </li>
+        <li class="internship-title-desc">
+          <span class="black font-600">Tools •</span> Figma, Loom, Jira, Hotjar
+        </li>
+      </ul>
+    </div>
+    <div class="internship-title-img-faire animate__animated animate__fadeInUp">
+      <img
+        class="title-mockup-amd animate__animated animate__fadeInUp"
+        src="img/faire-monitor-mockup.png"
+      />
+    </div>
+    <div class="content">
+      <div class="content-title font-bold web-thin">Context</div>
+      <div class="content-text web-thin">
+        <span class="text-underline"
+          ><a href="https://www.faire.com" target="_blank"
+            >Faire is a wholesale marketplace</a
+          ></span
+        >
+        that connects independent retailers with small brands—it makes it easy
+        for retailers to discover, purchase, and stock unique products for their
+        stores, while providing brands with a platform to reach a broader
+        audience without the need for a traditional sales force.
+      </div>
+      <div class="content-text-last web-thin">
+        At Faire, cross-functional teams are grouped into pillars, which are
+        further divided into pods. I was part of the Support Experience pod,
+        under the Retailer Tools & Programs pillar. The mission of our pod was
+        to help customers with prompt and cost efficient support, and revamping
+        Faire’s Help Center was the main project I worked on during my
+        internship.
+      </div>
+      <div class="content-title font-bold web-thin">Motivation</div>
+      <div class="content-text web-thin">
+        The Support Experience pod had a roadmap for several projects to be
+        shipped by the end of H2 2024. Our P0 was an AI support chatbot, while
+        other priorities included a Help Center content audit, support issue
+        taxonomy refresh, and improving and standardizing CSAT collection. With
+        so many upcoming updates to Faire’s support ecosystem, it felt
+        appropriate to update the Help Center as well, especially since its last
+        update was in 2020 (4+ years ago).
+      </div>
+      <div class="content-text-last web-thin">
+        Improving the Help Center could be meaningful not just from a UI/UX
+        standpoint, but also as a lever for reducing Contact Rate (CR%) upstream
+        of the self-serve tree. The Help Center is effective at deflecting a
+        portion of tickets today—among users that visit, those who engage (i.e.
+        search, read articles, navigate past user hubs) are 30-65% less likely
+        to enter the self-serve flow and 15-25% less likely to create a
+        self-serve ticket. However, there is also room for improvement—for
+        instance, 30% who tried to search or navigate still initiated the
+        self-serve flow.
+      </div>
+      <div class="content-title font-bold web-thin">Current State</div>
+      <div class="content-text web-thin">
+        Today, the Help Center starts on a parent page, where users must select
+        between the Retailer hub or Brand hub—each has content scoped to the
+        specific needs and interests of its audience. Once a user arrives at one
+        of the hubs, they can search, browse by topic, read articles, or enter
+        the self-serve flow through the ‘Contact Us’ button(s) located in the
+        header and sidebar.
+      </div>
+      <img class="content-img-last" src="img/hc-current-state.png" />
+      <div class="content-title font-bold web-thin">UX Audit</div>
+      <div class="content-text web-thin">
+        To figure out what was and wasn’t working with the current help center,
+        I conducted a UX audit for both the desktop and mobile experiences.
+      </div>
+      <img class="content-img" src="img/current-state-audit.png" />
+      <ul class="content-text-last content-highlight-faire web-thin">
+        <span class="bold color-faire">Key Insights</span>
+        <li class="bullet-point">
+          The hub pages lack strong visual hierarchy—no particular element
+          stands out as headings, images, buttons, and text all blend together
+          without clear distinction, providing users with no clear direction
+        </li>
+        <li class="bullet-point">
+          Across the entire help center, top of page search and navigation
+          elements (header & breadcrumb nav) feel clunky and unintuitive,
+          especially on mobile where the UI becomes cramped
+        </li>
+        <li class="bullet-point">
+          There is redundancy and excessive use of space on the search results
+          and topic pages, particularly with article snippets, ‘Read more’
+          links, and dividers for every article component
+        </li>
+      </ul>
+      <div class="content-title font-bold web-thin">Competitive Analysis</div>
+      <div class="content-text web-thin">
+        The next step was to figure out best practices when designing a help
+        center. I reviewed several help centers from well-established companies,
+        as well as from Faire's competitors (i.e. other marketplaces). I focused
+        on identifying key elements displaying intuitive navigation, clear
+        categorization, and effective search functionality. Top examples I
+        referred to included Airbnb, Slack, Coinbase, Uber, and Etsy.
+      </div>
+    </div>
+    <img class="content-img-fit-screen" src="img/hc-comp-analysis.png" />
+    <div class="content">
+      <ul class="content-text-last content-highlight-faire web-thin">
+        <span class="bold color-faire">Key Insights</span>
+        <li class="bullet-point">
+          No examples used a parent hub. Instead, platforms with multiple user
+          types, like Airbnb and Etsy, started users on the relevant side while
+          offering simple role switching for a seamless transition
+        </li>
+        <li class="bullet-point">
+          Many home or hub pages prominently feature a large, central search bar
+          (and related common topics) as a clear CTA, guiding users to find
+          relevant information quickly
+        </li>
+        <li class="bullet-point">
+          Many examples highlight search keywords in titles and snippets in the
+          search results page, making it easier for users to find relevant
+          content
+        </li>
+      </ul>
+      <div class="content-title font-bold web-thin">Ideation</div>
+      <div class="content-text web-thin">
+        Taking the UX research into account, as well as reviewing Faire’s design
+        system for ideal components, I approached the ideation phase broadly,
+        exploring a variety of possibilities to improve the Help Center
+        experience. This included experimenting with layouts for the home/hub,
+        search results, topic, and article pages, as well as designing
+        individual components and refining key navigation components, such as
+        the header and breadcrumb nav. My goal was to address the pain points
+        identified in the research and to align the designs with industry best
+        practices to create a more intuitive and user-friendly experience.
+      </div>
+      <img class="content-img" src="img/faire-card-mockup.png" />
+      <div class="content-text-last web-thin">
+        To refine potential designs, I frequently collaborated with CX,
+        engineering, strategy & analytics, brand design, and product designers
+        in the RTP pillar, engaging in regular jam and feedback sessions. With a
+        wide range of explorations, I will focus on the final design outcomes
+        and the key decisions behind them.
+      </div>
+      <div class="content-title font-bold web-thin">Hub pages</div>
+      <div class="content-text web-thin">
+        To speed up visit duration, we removed the parent hub and now direct
+        unsigned-in users to the Retailer hub—the Retailer side was chosen as
+        the default since there are significantly more retailers than brands
+        (~700k vs. ~150k). Important to note that signed-in users will always
+        default to the hub most relevant to them. We also added a hub
+        switcher/toggle at the top of the hero banner for a seamless transition
+        between the Retailer and Brand hubs, since there is no longer a parent
+        hub to complete this action. On non-hub pages, switching between the
+        Retailer and Brand sides is accessed through the chevron located in the
+        header.
+      </div>
+      <img class="content-img" src="img/hc-hub-pages.png" />
+      <div class="content-text-last web-thin">
+        <div class="content-text web-thin">
+          Another major change was creating a greater focus on search as the
+          primary CTA—this was done by centering and enlarging the search bar,
+          and by adding a greeting (personalized for signed-in users) just
+          above. Regarding the hero banner colors, we consulted with our brand
+          studio team to figure out the best combination. We wanted to use more
+          vibrant colors to generate energy, while at the same time staying
+          within the in-product color palette, especially since the Help Center
+          is a functional surface—which is how we decided on the light orange
+          and purple for the Retailer and Brand sides respectively. The final
+          update was a small QoL improvement: adding topic tags to the articles
+          displayed in the Featured Guides section to enhance clarity, and
+          standardizing previously inconsistent hover states for articles.
+        </div>
+        <div class="content-text content-one-highlight-faire">
+          Removed the parent hub and start unauthenticated users on the Retailer
+          hub
+        </div>
+        <div class="content-text content-one-highlight-faire">
+          Added a hub switcher/toggle for a seamless transition between the
+          Retailer and Brand hubs
+        </div>
+        <div class="content-text content-one-highlight-faire">
+          Greater focus on search as the primary CTA—large and centered search
+          bar
+        </div>
+      </div>
+      <div class="content-title font-bold web-thin">
+        Search & suggestion dropdown
+      </div>
+      <div class="content-text web-thin">
+        To speed up visit duration, we removed the parent hub and now direct
+        unsigned-in users to the Retailer hub—the Retailer side was chosen as
+        the default since there are significantly more retailers than brands
+        (~700k vs. ~150k). Important to note that signed-in users will always
+        default to the hub most relevant to them.
+      </div>
+      <img class="content-img" src="img/hc-search-dropdown.png" />
+      <div class="content-text web-thin">
+        To speed up visit duration, we removed the parent hub and now direct
+        unsigned-in users to the Retailer hub—the Retailer side was chosen as
+        the default since there are significantly more retailers than brands
+        (~700k vs. ~150k). Important to note that signed-in users will always
+        default to the hub most relevant to them.
+      </div>
+      <img class="content-img" src="img/hc-common-topics.png" />
+      <div class="content-text-last web-thin">
+        <div class="content-text web-thin">
+          Another major change was creating a greater focus on search as the
+          primary CTA—this was done by centering and enlarging the search bar,
+          and by adding a greeting (personalized for signed-in users) just
+          above.
+        </div>
+        <div class="content-text content-one-highlight-faire">
+          Removed the parent hub and start unauthenticated users on the Retailer
+          hub
+        </div>
+        <div class="content-text content-one-highlight-faire">
+          Added a hub switcher/toggle for a seamless transition between the
+          Retailer and Brand hubs
+        </div>
+        <div class="content-text content-one-highlight-faire">
+          Greater focus on search as the primary CTA—large and centered search
+          bar
+        </div>
+      </div>
+      <div class="content-title font-bold web-thin">
+        Header & breadcrumb nav
+      </div>
+      <div class="content-text web-thin">
+        The breadcrumb navigation is present on every page, which feels
+        unnecessary, especially on hub pages where users haven't navigated
+        anywhere yet. Some breadcrumbs, like a ‘Search’ breadcrumb on the search
+        results page, seem redundant since search is a global function rather
+        than part of a linear navigation. The header is static, looking sparse
+        on desktop but overcrowded on mobile. We’ve updated the header by
+        replacing the Faire logo with a lockup that helps users understand their
+        location within the Faire ecosystem and the Help Center. We also added a
+        language selector and sign-in buttons so users don’t need to navigate
+        back to other portals for these actions. The header now adjusts based on
+        the user's location—whether they’re on the Retailer or Brand side, the
+        type of page, their scroll depth, and their sign-in status. We
+        simplified the breadcrumb navigation and removed it from some pages to
+        improve clarity.
+      </div>
+      <div class="content-title font-bold web-thin">Search results page</div>
+      <div class="content-text web-thin">
+        Lorem ipsum taking the UX research into account, as well as reviewing
+        Faire’s design system for ideal components, I approached the ideation
+        phase broadly, exploring a variety of design possibilities to improve
+        the Help Center experience. This included experimenting with layouts for
+        the home/hub, search results, topic, and article pages, while refining
+        key navigation components, such as the header and breadcrumb nav. My
+        goal was to address the pain points identified in the research, as well
+        as align the designs with industry best practices to create a more
+        intuitive and user-friendly experience.
+      </div>
+      <div class="content-title font-bold web-thin">Topic page</div>
+      <div class="content-text web-thin">
+        Lorem ipsum taking the UX research into account, as well as reviewing
+        Faire’s design system for ideal components, I approached the ideation
+        phase broadly, exploring a variety of design possibilities to improve
+        the Help Center experience. This included experimenting with layouts for
+        the home/hub, search results, topic, and article pages, while refining
+        key navigation components, such as the header and breadcrumb nav. My
+        goal was to address the pain points identified in the research, as well
+        as align the designs with industry best practices to create a more
+        intuitive and user-friendly experience.
+      </div>
+      <div class="content-title font-bold web-thin">Article page</div>
+      <div class="content-text web-thin">
+        Lorem ipsum taking the UX research into account, as well as reviewing
+        Faire’s design system for ideal components, I approached the ideation
+        phase broadly, exploring a variety of design possibilities to improve
+        the Help Center experience. This included experimenting with layouts for
+        the home/hub, search results, topic, and article pages, while refining
+        key navigation components, such as the header and breadcrumb nav. My
+        goal was to address the pain points identified in the research, as well
+        as align the designs with industry best practices to create a more
+        intuitive and user-friendly experience.
+      </div>
+      <div class="content-title font-bold web-thin">A/B Testing</div>
+      <div class="content-text web-thin">
+        Lorem ipsum taking the UX research into account, as well as reviewing
+        Faire’s design system for ideal components, I approached the ideation
+        phase broadly, exploring a variety of design possibilities to improve
+        the Help Center experience. This included experimenting with layouts for
+        the home/hub, search results, topic, and article pages, while refining
+        key navigation components, such as the header and breadcrumb nav. My
+        goal was to address the pain points identified in the research, as well
+        as align the designs with industry best practices to create a more
+        intuitive and user-friendly experience.
+      </div>
+    </div>
+    <div class="work-up-next">
+      <div class="web-thin">
+        <div
+          class="font-bold font-bold about-title"
+          style="margin-bottom: 36px"
+        >
+          Next project
+        </div>
+        <div class="card">
+          <a class="card-container card-container-amd" href="amd.html">
+            <div class="card-img card-amd">
+              <img class="logo-amd" src="img/amd-card-mockup.png" />
+            </div>
+            <div class="card-text">
+              <div>
+                <div class="card-title color-black font-bold">
+                  Overhauling Radeon Settings into Radeon Software: Adrenalin
+                  Edition™
+                </div>
+                <div class="card-desc">UX Design Intern at AMD</div>
+                <div class="card-tags black">INFO ARCHITECTURE</div>
+                <div class="card-tags black">PROTOTYPING</div>
+                <div class="card-tags black">USABILITY TESTING</div>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <div class="web-thin">
+        <ul class="footer-list">
+          <li class="footer-list-item footer-text footer-link">
+            <a href="mailto:christopher.m.ho@gmail.com">Email</a>
+          </li>
+          <li class="footer-list-item footer-text footer-link">
+            <a href="http://linkedin.com/in/christophermho" target="_blank"
+              >LinkedIn</a
+            >
+          </li>
+        </ul>
+        <div class="footer-text">
+          Designed and coded by © 2024 Christopher Ho — made with lots of Chupa
+          Chups 🍭
+        </div>
+      </div>
+    </div>
+    <a class="go-top-btn" href="#"> <i class="fas fa-arrow-up"></i></a>
+
+    <script type="text/javascript">
+      function progressBarScroll() {
+        let winScroll =
+            document.body.scrollTop || document.documentElement.scrollTop,
+          height =
+            document.documentElement.scrollHeight -
+            document.documentElement.clientHeight,
+          scrolled = (winScroll / height) * 100;
+        document.getElementById("progressBar").style.width = scrolled + "%";
+      }
+
+      window.onscroll = function () {
+        progressBarScroll();
+      };
+    </script>
+  </body>
+</html>

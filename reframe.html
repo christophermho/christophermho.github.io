@@ -19,7 +19,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Karla:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Manrope:wght@200..800&family=Karla:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
       rel="stylesheet"
     />
     <link
@@ -28,6 +28,11 @@
     />
   </head>
   <body>
+    <div class="header">
+      <div class="progress-container">
+        <div class="progress-bar-rf" id="progressBar"></div>
+      </div>
+    </div>
     <div class="landing-initial web-thin">
       <nav class="nav">
         <a class="nav-icon color-black" href="index.html">Ch.</a>
@@ -37,7 +42,7 @@
           </li>
           <li class="nav-list-item"><a href="about.html">About</a></li>
           <li class="nav-list-item">
-            <a href="Christopher Ho Resume.pdf" target="_blank">Resume</a>
+            <a href="Christopher_Ho_Resume.pdf" target="_blank">Resume</a>
           </li>
         </ul>
       </nav>
@@ -63,9 +68,9 @@
         </li>
       </ul>
     </div>
-    <div class="project-title-img-reframe animate__animated animate__fadeInUp">
+    <div class="project-title-img-rf animate__animated animate__fadeInUp">
       <img
-        class="title-mockup-reframe animate__animated animate__fadeInUp"
+        class="title-mockup-rf animate__animated animate__fadeInUp"
         src="img/rf-title-mockup.png"
       />
     </div>
@@ -96,13 +101,13 @@
         experiencing the struggle, I checked what the stats really said:
       </div>
     </div>
-    <div class="key-text-highlight">
+    <div class="key-text-highlight-rf">
       43% of people give up on their fitness goals within one month of making
       them
     </div>
     <div class="content">
-      <ul class="content-text-last content-highlight-amd web-thin">
-        <span class="bold">Other Relevant Statistics</span>
+      <ul class="content-text-last content-highlight-rf web-thin">
+        <span class="bold color-rf">Other Relevant Statistics</span>
         <li class="bullet-point">
           31% admit to feeling anxious when thinking about trying to get into
           shape overall
@@ -128,23 +133,23 @@
         class="content-img web-thin"
         src="img/reframe-comp-analysis.png"
       />
-      <ul class="content-text content-highlight-reframe web-thin">
-        <span class="bold">MyFitnessPal</span>
+      <ul class="content-text content-highlight-rf web-thin">
+        <div class="bold color-rf">Key Insights</div>
         <li class="bullet-point">
-          Tracking and analyzing calorie intake, macronutrient breakdowns,
-          exercise calories, and bodyweight
+          <span class="bold">MyFitnessPal</span> — Tracking and analyzing
+          calorie intake, macronutrient breakdowns, exercise calories, and
+          bodyweight
         </li>
-        <span class="bold">Strava</span>
         <li class="bullet-point">
-          Tracking and analyzing running and cycling metrics (distance, speed,
+          <span class="bold">Strava</span>
+          — Tracking and analyzing running and cycling metrics (distance, speed,
           elevation, and heart rate), with an emphasis on communities and
           socializing
         </li>
-        <span class="bold">Nike Training Club</span>
         <li class="bullet-point">
-          Providing workout plans and training sessions for various fitness
-          levels, as well as tracking workout metrics (duration, intensity, and
-          completion)
+          <span class="bold">Nike Training Club</span> — Providing workout plans
+          and training sessions for various fitness levels, as well as tracking
+          workout metrics (duration, intensity, and completion)
         </li>
       </ul>
       <div class="content-text-last web-thin">
@@ -161,7 +166,7 @@
         opportunity area that would differentiate my solution from the rest.
       </div>
     </div>
-    <div class="key-text-highlight">
+    <div class="key-text-highlight-rf">
       How might we help people achieve and sustain their fitness goals?
     </div>
     <div class="content">
@@ -175,8 +180,8 @@
         maps.
       </div>
       <img class="content-img web-thin" src="img/reframe-affinity-maps.png" />
-      <ul class="content-text-last content-highlight-reframe web-thin">
-        <span class="bold">Insights & Takeaways</span>
+      <ul class="content-text-last content-highlight-rf web-thin">
+        <span class="bold color-rf">Insights & Takeaways</span>
         <li class="bullet-point">
           Beginners don't know where or how to start when creating fitness goals
           and fixing their diet
@@ -207,7 +212,11 @@
         different frame of mind regarding going to the gym and fitness in
         general.
       </div>
-      <img class="content-img-last" src="img/frame-of-mind-2.png" />
+      <img
+        id="frame-of-mind"
+        class="content-img-last web-thin"
+        src="img/frame-of-mind.png"
+      />
       <div class="content-title font-bold web-thin">Designing the App</div>
       <div class="content-text web-thin">
         After identifying the opportunity area:
@@ -216,8 +225,8 @@
           fitness goals and workout routines</span
         >, I identified key features that I needed to design.
       </div>
-      <ul class="content-text content-highlight-reframe web-thin">
-        <span class="bold">Key Features</span>
+      <ul class="content-text content-highlight-rf web-thin">
+        <span class="bold color-rf">Key Features</span>
         <li class="bullet-point">
           A way to explain to users the concept of "reframing" fitness goals and
           workouts
@@ -248,12 +257,10 @@
         and the user would then receive suggested reframed goals that they could
         choose to add.
       </div>
-    </div>
-    <img
-      class="content-img-fit-screen"
-      src="img/reframe-quickstart-guide.png"
-    />
-    <div class="content">
+      <img
+        class="content-img web-thin"
+        src="img/reframe-quickstart-guide.png"
+      />
       <div class="content-text-last web-thin">
         After testing, it was quickly evident that there was an overwhelming
         amount of expository text that was likely to be skipped over. Users were
@@ -273,9 +280,7 @@
         assistance in creating reframed goals. The initial design had users
         input a new goal and receive suggestions for reframed goals.
       </div>
-    </div>
-    <img class="content-img-fit-screen" src="img/reframe-new-goal.png" />
-    <div class="content">
+      <img class="content-img web-thin" src="img/reframe-new-goal.png" />
       <div class="content-text-last web-thin">
         Once again, testing indicated that providing generated goal suggestions
         was not properly tailored or engaging at all for users. It was better
@@ -299,9 +304,7 @@
         complete every target, but if they weren't feeling it, atleast they did
         something (minimum target).
       </div>
-    </div>
-    <img class="content-img-fit-screen" src="img/reframe-start-a-workout.png" />
-    <div class="content">
+      <img class="content-img web-thin" src="img/reframe-start-a-workout.png" />
       <div class="content-text web-thin">
         Similar to the Goals quickstart guide, testing indicated that the
         expository text was too overwhelming and likely to be skipped over.
@@ -326,10 +329,7 @@
         high-fidelity design and design system.
       </div>
     </div>
-    <!-- <img class="content-img-fit-screen" src="img/reframe-high-fidelity-2.png" /> -->
-    <img class="content-img-fit-screen" src="img/reframe-final-design.png" />
-    <!-- <img class="content-img-fit-screen" src="img/reframe-high-fidelity-1.png" /> -->
-    <!-- <img class="content-img-fit-screen" src="img/reframe-high-fidelity-4.png" /> -->
+    <img class="content-img web-thin" src="img/reframe-final-design.png" />
     <div class="content">
       <img
         id="competition"
@@ -376,7 +376,7 @@
             <div class="card-text">
               <div>
                 <div class="card-title color-black font-bold">
-                  Misc Projects
+                  Miscellaneous Projects
                 </div>
                 <div class="card-desc">
                   A collection of various passion and school projects
@@ -403,11 +403,27 @@
           </li>
         </ul>
         <div class="footer-text">
-          Designed and coded by © 2023 Christopher Ho — made with lots of Haribo
-          gummy bears 🧸
+          Designed and coded by © 2024 Christopher Ho — made with lots of Chupa
+          Chups 🍭
         </div>
       </div>
     </div>
     <a class="go-top-btn" href="#"> <i class="fas fa-arrow-up"></i></a>
+
+    <script type="text/javascript">
+      function progressBarScroll() {
+        let winScroll =
+            document.body.scrollTop || document.documentElement.scrollTop,
+          height =
+            document.documentElement.scrollHeight -
+            document.documentElement.clientHeight,
+          scrolled = (winScroll / height) * 100;
+        document.getElementById("progressBar").style.width = scrolled + "%";
+      }
+
+      window.onscroll = function () {
+        progressBarScroll();
+      };
+    </script>
   </body>
 </html>

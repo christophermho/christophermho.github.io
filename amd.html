@@ -19,7 +19,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Karla:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Manrope:wght@200..800&family=Karla:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
       rel="stylesheet"
     />
     <link
@@ -28,6 +28,11 @@
     />
   </head>
   <body>
+    <div class="header">
+      <div class="progress-container">
+        <div class="progress-bar-amd" id="progressBar"></div>
+      </div>
+    </div>
     <div class="landing-initial web-thin">
       <nav class="nav">
         <a class="nav-icon color-black" href="index.html">Ch.</a>
@@ -37,7 +42,7 @@
           </li>
           <li class="nav-list-item"><a href="about.html">About</a></li>
           <li class="nav-list-item">
-            <a href="Christopher Ho Resume.pdf" target="_blank">Resume</a>
+            <a href="Christopher_Ho_Resume.pdf" target="_blank">Resume</a>
           </li>
         </ul>
       </nav>
@@ -45,20 +50,21 @@
     <div class="internship web-thin animate__animated animate__fadeInUp">
       <div class="internship-title">
         <span class="color-black font-bold"
-          >Advanced Micro Devices Internship</span
+          >Overhauling Radeon Settings into Radeon Software: Adrenalin
+          Edition™</span
         >
       </div>
       <ul>
         <li class="internship-title-desc">
-          <span class="black bold">Role •</span> UI/UX Design Intern
+          <span class="black bold">Role •</span> UX Design Intern at AMD
         </li>
         <li class="internship-title-desc">
           <span class="black bold">Team •</span>
-          <span class="black">Designers:</span> Sebastian B, Christopher H,
-          <span class="black">Product Manager:</span> Adrian C
+          <span class="black">PM:</span> Adrian C,
+          <span class="black">Design:</span> Sebastian B, Christopher H
         </li>
         <li class="internship-title-desc">
-          <span class="black bold">Time •</span> 9 weeks, Fall 2019
+          <span class="black bold">Time •</span> 2 months, Fall 2019
         </li>
         <li class="internship-title-desc">
           <span class="black bold">Tools •</span> Adobe XD, Useberry
@@ -68,31 +74,34 @@
     <div class="internship-title-img-amd animate__animated animate__fadeInUp">
       <img
         class="title-mockup-amd animate__animated animate__fadeInUp"
-        src="img/amd-monitor.png"
+        src="img/amd-monitor-mockup-2.png"
       />
     </div>
     <div class="content">
       <div class="content-title font-bold web-thin">Context</div>
       <div class="content-text web-thin">
-        Radeon Software is a device driver and utility software package for
-        AMD’s Radeon graphics cards and advanced processing units. It includes
-        features like game profile management, overclocking and undervolting,
-        performance monitoring, recording and streaming, and more.
+        <span class="text-underline"
+          ><a href="https://www.amd.com" target="_blank"
+            >AMD is a semiconductor company</a
+          ></span
+        >
+        that designs and produces computer processors, graphics cards, and
+        related technologies—Radeon Software is the device driver and utility
+        software package for their Radeon graphics cards and advanced processing
+        units. It includes features like game profile management, overclocking
+        and undervolting, performance monitoring, recording and streaming, etc.
       </div>
-      <!-- Every Christmas, AMD releases a new driver that introduces several new
-        software features, adding to the functionality of AMD Radeon graphics
-        cards. -->
       <div class="content-text-last web-thin">
         During my internship, I worked on the release of Radeon Software:
         Adrenalin (yes, they spelled it wrong) 2020 Edition, which I'll refer to
-        as RSA 2020 for short. I focused on validating the design by creating
-        and usability testing a high fidelity prototype. Other responsibilities
-        during my internship included starting RSA 2020's first design system
-        and designing relevant screens and overlays when necessary.
+        as RSX for short. I focused on validating the design by creating and
+        usability testing a high fidelity prototype. Other responsibilities
+        during my internship included starting RSX's first design system and
+        designing relevant screens and overlays when necessary.
       </div>
       <div class="content-title font-bold web-thin">Current State</div>
       <div class="content-text web-thin">
-        Prior to the release of RSA 2020, Radeon Software was known as Radeon
+        Prior to the release of RSX, Radeon Software was known as Radeon
         Settings (Adrenalin 2019 Edition). This version had a dated UI that had
         been used for years — users were extremely familiar and comfortable with
         the current information architecture and navigation.
@@ -100,8 +109,8 @@
       <img class="content-img-last" src="img/amd-current-state.png" />
       <div class="content-title font-bold web-thin">Future State</div>
       <div class="content-text web-thin">
-        In the the upcoming RSA 2020 driver update, Radeon Software would
-        replace Radeon Settings as a comprehensive suite that included drivers,
+        In the the upcoming RSX driver update, Radeon Software would replace
+        Radeon Settings as a comprehensive suite that included drivers,
         settings, and additional features for Radeon graphics cards. Some of the
         new innovative features included Radeon Boost, Radeon Anti-Lag, Radeon
         Image Sharpening, Radeon Integer Display Scaling, AMD Link Streaming,
@@ -119,9 +128,9 @@
       <img class="content-img" src="img/amd-future-state-2.png" />
       <div class="content-text-last web-thin">
         When I was brought on board, I was tasked with validating the experience
-        of RSA 2020. Despite the revamped design being close to completion, it
-        had barely been tested with actual users. Using the existing design, it
-        was my job to create a high-fidelity prototype and conduct usability
+        of RSX. Despite the revamped design being close to completion, it had
+        barely been tested with actual users. Using the existing design, it was
+        my job to create a high-fidelity prototype and conduct usability
         testing. While the future state was more modern and sleek, what mattered
         was whether it was actually intuitive or not. Would users have an easy
         time understanding and navigating the new UI, let alone be willing to
@@ -129,8 +138,8 @@
       </div>
       <div class="content-title font-bold web-thin">User Flows</div>
       <div class="content-text web-thin">
-        Since RSA 2020 included several new features, it was necessary to design
-        user flows for both new and existing features. It was also important to
+        Since RSX included several new features, it was necessary to design user
+        flows for both new and existing features. It was also important to
         include a variety of tasks for users of different experience levels with
         gaming and Radeon Software. How would the experience differ for novice
         vs. experienced users? With these notes in mind, I designed the
@@ -138,7 +147,7 @@
         complete with animations, transitions, overlays, and keyboard shortcuts.
       </div>
       <ol class="content-text-last content-highlight-amd web-thin">
-        <span class="bold">User Flows/Tasks</span>
+        <span class="bold color-amd">User Flows/Tasks</span>
         <li class="bullet-point">Open Radeon Software</li>
         <li class="bullet-point">Launch a game (Gears 5)</li>
         <li class="bullet-point">Open Radeon overlay and sidebar</li>
@@ -173,7 +182,7 @@
         questions:
       </div>
       <ul class="content-text content-highlight-amd web-thin">
-        <span class="bold">Screening Questions</span>
+        <span class="bold color-amd">Screening Questions</span>
         <li class="bullet-point">
           How experienced are you with Radeon Settings/Software?
         </li>
@@ -202,7 +211,7 @@
         were highly anticipated by virtually all users.
       </div>
       <ul class="content-text-last content-highlight-amd web-thin">
-        <span class="bold">Key Insights</span>
+        <span class="bold color-amd">Key Insights</span>
         <li class="bullet-point">
           The UI was smooth and visually appealing, but took up an unnecessary
           amount of space, required too much scrolling, and felt overcomplicated
@@ -226,12 +235,12 @@
       </ul>
       <div class="content-title font-bold web-thin">Results</div>
       <div class="content-text web-thin">
-        Due to product deadlines, RSA 2020 had to be released before changes
-        could be properly implemented. Subsequent releases of Radeon Software
-        have received updates based on feedback from both usability testing and
+        Due to product deadlines, RSX had to be released before changes could be
+        properly implemented. Subsequent releases of Radeon Software have
+        received updates based on feedback from both usability testing and
         actual use. Radeon Software is currently in its 2023 release and is used
         by millions of gamers around the globe. Below is an introductory video
-        for the initial release of RSA 2020.
+        for the initial release of RSX.
       </div>
       <div class="content-text-last web-thin">
         <iframe
@@ -247,14 +256,14 @@
       </div>
       <div class="content-title font-bold web-thin">Next Steps</div>
       <div class="content-text web-thin">
-        RSA 2020 was released immediately after my internship ended — if I had
-        more time, I would pay attention to different metrics and KPIs sourced
-        from the live release. This would provide me with further data to gauge
-        and measure where the new design succeeds and where it could be further
+        RSX was released immediately after my internship ended — if I had more
+        time, I would pay attention to different metrics and KPIs sourced from
+        the live release. This would provide me with further data to gauge and
+        measure where the new design succeeds and where it could be further
         improved.
       </div>
       <ul class="content-text-last content-highlight-amd web-thin">
-        <span class="bold">Success Metrics and KPIs</span>
+        <span class="bold color-amd">Success Metrics and KPIs</span>
         <li class="bullet-point">
           Installation Success Rate — a high success rate would indicate a
           smooth onboarding process for users and willingness to adopt the new
@@ -300,10 +309,10 @@
             </div>
             <div class="card-text">
               <div>
-                <div class="card-title color-black font-bold">Reframe</div>
-                <div class="card-desc">
-                  Utilizing the framing effect to make fitness manageable
+                <div class="card-title color-black font-bold">
+                  Utilizing the framing effect to make fitness feel manageable
                 </div>
+                <div class="card-desc">Product Design Lead at Reframe</div>
                 <div class="card-tags black">PERSONAL PROJECT</div>
                 <div class="card-tags black">DESIGN PROCESS</div>
                 <div class="card-tags black">PRODUCT THINKING</div>
@@ -326,11 +335,27 @@
           </li>
         </ul>
         <div class="footer-text">
-          Designed and coded by © 2023 Christopher Ho — made with lots of Haribo
-          gummy bears 🧸
+          Designed and coded by © 2024 Christopher Ho — made with lots of Chupa
+          Chups 🍭
         </div>
       </div>
     </div>
     <a class="go-top-btn" href="#"> <i class="fas fa-arrow-up"></i></a>
+
+    <script type="text/javascript">
+      function progressBarScroll() {
+        let winScroll =
+            document.body.scrollTop || document.documentElement.scrollTop,
+          height =
+            document.documentElement.scrollHeight -
+            document.documentElement.clientHeight,
+          scrolled = (winScroll / height) * 100;
+        document.getElementById("progressBar").style.width = scrolled + "%";
+      }
+
+      window.onscroll = function () {
+        progressBarScroll();
+      };
+    </script>
   </body>
 </html>
