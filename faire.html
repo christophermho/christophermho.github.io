@@ -50,7 +50,7 @@
     <div class="internship web-thin animate__animated animate__fadeInUp">
       <div class="internship-title">
         <span class="color-black font-bold">
-          Revamping Faire's Help Center search and navigation experience
+          Revamping Faire's Help Center navigation and search experience
         </span>
       </div>
       <ul>
@@ -170,8 +170,8 @@
       <ul class="content-text-last content-highlight-faire web-thin">
         <span class="bold color-faire">Key Insights</span>
         <li class="bullet-point">
-          No examples used a parent hub. Instead, platforms with multiple user
-          types, like Airbnb and Etsy, started users on the relevant side while
+          No examples use a parent hub. Instead, platforms with multiple user
+          types, like Airbnb and Etsy, start users on the relevant side while
           offering simple role switching for a seamless transition
         </li>
         <li class="bullet-point">
@@ -189,7 +189,7 @@
       <div class="content-text web-thin">
         Taking the UX research into account, as well as reviewing Faire’s design
         system for ideal components, I approached the ideation phase broadly,
-        exploring a variety of possibilities to improve the Help Center
+        exploring a variety of possibilities to improve our Help Center
         experience. This included experimenting with layouts for the home/hub,
         search results, topic, and article pages, as well as designing
         individual components and refining key navigation components, such as
@@ -200,18 +200,18 @@
       <img class="content-img" src="img/faire-card-mockup.png" />
       <div class="content-text-last web-thin">
         To refine potential designs, I frequently collaborated with CX,
-        engineering, strategy & analytics, brand design, and product designers
+        engineering, strategy & analytics, brand studio, and product designers
         in the RTP pillar, engaging in regular jam and feedback sessions. With a
         wide range of explorations, I will focus on the final design outcomes
         and the key decisions behind them.
       </div>
       <div class="content-title font-bold web-thin">Hub pages</div>
       <div class="content-text web-thin">
-        To speed up visit duration, we removed the parent hub and now direct
+        To speed up visit duration, I removed the parent hub and now direct
         unsigned-in users to the Retailer hub—the Retailer side was chosen as
         the default since there are significantly more retailers than brands
         (~700k vs. ~150k). Important to note that signed-in users will always
-        default to the hub most relevant to them. We also added a hub
+        default to the hub most relevant to them. I also added a hub
         switcher/toggle at the top of the hero banner for a seamless transition
         between the Retailer and Brand hubs, since there is no longer a parent
         hub to complete this action. On non-hub pages, switching between the
@@ -224,19 +224,18 @@
           Another major change was creating a greater focus on search as the
           primary CTA—this was done by centering and enlarging the search bar,
           and by adding a greeting (personalized for signed-in users) just
-          above. Regarding the hero banner colors, we consulted with our brand
-          studio team to figure out the best combination. We wanted to use more
-          vibrant colors to generate energy, while at the same time staying
-          within the in-product color palette, especially since the Help Center
-          is a functional surface—which is how we decided on the light orange
-          and purple for the Retailer and Brand sides respectively. The final
-          update was a small QoL improvement: adding topic tags to the articles
-          displayed in the Featured Guides section to enhance clarity, and
-          standardizing previously inconsistent hover states for articles.
+          above. Regarding the hero banner colors, I consulted with our brand
+          studio team to figure out the best combination. I wanted to use
+          brighter colors to generate energy, while also staying within the
+          in-product color palette, especially since the Help Center is a
+          functional surface—with this in mind, we decided on the light orange
+          and purple gradients for the Retailer and Brand sides respectively.
+          The final update was a small QoL improvement: adding topic tags to the
+          articles displayed in the Featured Guides section to enhance clarity,
+          and standardizing previously inconsistent hover states for articles.
         </div>
         <div class="content-text content-one-highlight-faire">
-          Removed the parent hub and start unauthenticated users on the Retailer
-          hub
+          Removed the parent hub and start unsigned-in users at the Retailer hub
         </div>
         <div class="content-text content-one-highlight-faire">
           Added a hub switcher/toggle for a seamless transition between the
@@ -248,34 +247,155 @@
         </div>
       </div>
       <div class="content-title font-bold web-thin">
-        Search & suggestion dropdown
+        Results dropdown & common topics
       </div>
       <div class="content-text web-thin">
-        To speed up visit duration, we removed the parent hub and now direct
-        unsigned-in users to the Retailer hub—the Retailer side was chosen as
-        the default since there are significantly more retailers than brands
-        (~700k vs. ~150k). Important to note that signed-in users will always
-        default to the hub most relevant to them.
+        In the current state, the search results dropdown used excessive space
+        by including out-of-context article snippets that highlighted keywords
+        from the user's query. These snippets often started mid-sentence,
+        providing little to no useful context. Additionally, the dropdown had a
+        scroll feature that showed every result, which felt redundant since
+        users could simply press 'enter' to see all results on a larger screen
+        view. In the future state, the redesign focused on improving
+        scannability by removing article snippets, and instead highlighting
+        keyword(s) within the actual article titles. The dropdown now displays a
+        maximum of six suggestions, with a "See all results" button to let users
+        easily view the full list without unnecessary scrolling.
       </div>
       <img class="content-img" src="img/hc-search-dropdown.png" />
       <div class="content-text web-thin">
-        To speed up visit duration, we removed the parent hub and now direct
-        unsigned-in users to the Retailer hub—the Retailer side was chosen as
-        the default since there are significantly more retailers than brands
-        (~700k vs. ~150k). Important to note that signed-in users will always
-        default to the hub most relevant to them.
+        To further improve navigation, I introduced common topics just below the
+        search bar, providing quick links to curated articles. These articles
+        were tailored specifically for the Retailer and Brand hubs, selected by
+        analyzing a mix of the most popular and highest-rated articles based on
+        CSAT scores. However, certain articles were intentionally excluded to
+        protect the Faire brand—for instance, "Issue with my order payout" was
+        very a popular topic, but featuring it would likely discourage new
+        users, as it might raise concerns about the Faire's reliability as a
+        platform.
       </div>
       <img class="content-img" src="img/hc-common-topics.png" />
       <div class="content-text-last web-thin">
-        <div class="content-text web-thin">
-          Another major change was creating a greater focus on search as the
-          primary CTA—this was done by centering and enlarging the search bar,
-          and by adding a greeting (personalized for signed-in users) just
-          above.
+        <div class="content-text content-one-highlight-faire">
+          Simplified the search results dropdown for better scannability
         </div>
         <div class="content-text content-one-highlight-faire">
-          Removed the parent hub and start unauthenticated users on the Retailer
-          hub
+          Added curated common topics, excluding articles that could harm brand
+          perception.
+        </div>
+      </div>
+      <div class="content-title font-bold web-thin">Header (desktop)</div>
+      <div class="content-text web-thin">
+        In the current state, the header is static and minimal, displaying only
+        the Faire logo, the "Contact Us" button, and a search bar on non-hub
+        pages. I improved the header by adding a divider and the text "Help
+        Center for Retailers/Brands" next to the Faire logo, providing users
+        with a clear understanding of their location within the Faire
+        ecosystem—this lockup is particularly important to prevent confusion for
+        users who arrive via SEO. Additionally, I added a language selector and
+        sign-in buttons, allowing users to perform these actions without needing
+        to return to the Retailer or Brand portals.
+      </div>
+      <img class="content-img" src="img/header-desktop.png" />
+      <div class="content-text-last web-thin">
+        The header is now fixed to the top and dynamically adjusts based on the
+        user's location in the Help Center; the type of page, scroll depth, and
+        sign-in status all affect which components appear in the header. For
+        example, scrolling past the primary search bar on hub pages reveals a
+        search bar in the header, and the chevron for switching between hubs
+        appears on non-hub pages.
+      </div>
+      <div class="content-title font-bold web-thin">Header (mobile)</div>
+      <div class="content-text web-thin">
+        While the header was minimal on desktop, it became cluttered on mobile,
+        especially on non-hub pages. The breadcrumb nav was crammed and prone to
+        cutting off as users navigated deeper into the Help Center.
+        Additionally, navigation menus on non-hub pages like "Browse all topics"
+        and "In this guide," which were sidebars on desktop, transformed into
+        dropdowns on mobile—these required additional clicks, and again,
+        contributed to an overcrowded top of the page layout.
+      </div>
+      <img class="content-img" src="img/header-mobile.png" />
+      <div class="content-text-last web-thin">
+        To address these issues, I separated the breadcrumb nav from the header
+        (detailed in the next section) and consolidated all header
+        buttons—including the new language selector and sign-in buttons—into a
+        hamburger menu. Additionally, I relocated the topics browsing feature
+        into the same menu to reduce clutter on non-hub pages. By fixing the
+        header to the top of the page, users can now access the topics menu at
+        any location, regardless of their page or scroll depth. This change is a
+        key improvement over the previous design where users had to scroll back
+        to the top to browse topics.
+      </div>
+      <div class="content-title font-bold web-thin">
+        Breadcrumb nav & article page
+      </div>
+      <div class="content-text web-thin">
+        In the current design, the breadcrumb nav is attached to the header and
+        appears on every page, which feels unnecessary, particularly on hub
+        pages, where users haven’t navigated yet. Some breadcrumbs are
+        especially awkward, such as the “Search” breadcrumb on the search
+        results page, since search is a global function and not part of a linear
+        navigation path (results vary depending on the query). The “Home”
+        breadcrumb, which is present on every single page and leads back to the
+        parent hub page, also felt redundant—data showed that users rarely
+        switch between hubs—and somewhat misleading. This was especially true
+        for signed-in users, where the Retailer and Brand hubs functioned better
+        as home pages, since they are the default Help Center landing pages for
+        their respective user type. Additionally, on article pages, the article
+        breadcrumb felt repetitive, appearing directly above the article title.
+      </div>
+      <img class="content-img" src="img/breadcrumb-nav.png" />
+      <div class="content-text-last web-thin">
+        To improve clarity, I detached the breadcrumb nav from the header and
+        removed it from all pages except article pages. It's important to note
+        that on non-hub pages, the hub (home) pages and topic pages can always
+        be accessed through the header lockup and sidebar. For article pages, I
+        simplified the breadcrumb nav by removing the "Retailer/Brand Guides"
+        and article title breadcrumbs, leaving only the "Home" breadcrumb (which
+        now links back to the appropriate hub page) and the topic breadcrumb,
+        representing the topic to which the article belongs.
+      </div>
+      <div class="content-title font-bold web-thin">Search results page</div>
+      <div class="content-text web-thin">
+        In the current state, the search results page is cluttered with
+        repetitive elements, specifically the same ‘Read more’ links and
+        dividers for each article. This is especially problematic on mobile,
+        where it leads to excessive scrolling. Additionally, users can only
+        click the 'Read more' link to navigate to an article, which feels
+        limiting and requires precise interaction with the mouse or touch input.
+      </div>
+      <img class="content-img" src="img/search-results.png" />
+      <div class="content-text-last web-thin">
+        I streamlined the search results page by removing unnecessary elements
+        and incorporating topic tags for better context on each article, reusing
+        the article component developed for the hub pages. Keyword highlights
+        were added to make scanning for relevant results easier, and now the
+        entire article container is clickable, making navigation less strict. I
+        also introduced a hover state for the article container, which did not
+        exist in the previous design, providing users with clearer visual
+        feedback. Additionally, I made a small QoL improvement by displaying the
+        total number of search results and implementing pagination to improve
+        load times and reduce excessive scrolling.
+      </div>
+      <div class="content-title font-bold web-thin">Topic page</div>
+      <div class="content-text web-thin">
+        The current state of the topics page closely resembled the search
+        results page, featuring the same article component that included a
+        title, snippet, 'Read more' link, and divider. I simplified the page by
+        displaying only the article titles. This change made sense because users
+        navigating to a topic page typically have a clear idea of what they’re
+        looking for, making the snippets less necessary. By removing the
+        snippets and 'Read more' links and making the article titles the
+        clickable links, I reduced visual clutter and optimized space on the
+        page. This streamlined layout not only improved scannability but also
+        minimized excessive scrolling, especially on mobile devices where these
+        issues are emphasized.
+      </div>
+      <img class="content-img" src="img/topics.png" />
+      <div class="content-text-last web-thin">
+        <div class="content-text content-one-highlight-faire">
+          Removed the parent hub and start unsigned-in users at the Retailer hub
         </div>
         <div class="content-text content-one-highlight-faire">
           Added a hub switcher/toggle for a seamless transition between the
@@ -286,72 +406,115 @@
           bar
         </div>
       </div>
-      <div class="content-title font-bold web-thin">
-        Header & breadcrumb nav
-      </div>
-      <div class="content-text web-thin">
-        The breadcrumb navigation is present on every page, which feels
-        unnecessary, especially on hub pages where users haven't navigated
-        anywhere yet. Some breadcrumbs, like a ‘Search’ breadcrumb on the search
-        results page, seem redundant since search is a global function rather
-        than part of a linear navigation. The header is static, looking sparse
-        on desktop but overcrowded on mobile. We’ve updated the header by
-        replacing the Faire logo with a lockup that helps users understand their
-        location within the Faire ecosystem and the Help Center. We also added a
-        language selector and sign-in buttons so users don’t need to navigate
-        back to other portals for these actions. The header now adjusts based on
-        the user's location—whether they’re on the Retailer or Brand side, the
-        type of page, their scroll depth, and their sign-in status. We
-        simplified the breadcrumb navigation and removed it from some pages to
-        improve clarity.
-      </div>
-      <div class="content-title font-bold web-thin">Search results page</div>
-      <div class="content-text web-thin">
-        Lorem ipsum taking the UX research into account, as well as reviewing
-        Faire’s design system for ideal components, I approached the ideation
-        phase broadly, exploring a variety of design possibilities to improve
-        the Help Center experience. This included experimenting with layouts for
-        the home/hub, search results, topic, and article pages, while refining
-        key navigation components, such as the header and breadcrumb nav. My
-        goal was to address the pain points identified in the research, as well
-        as align the designs with industry best practices to create a more
-        intuitive and user-friendly experience.
-      </div>
-      <div class="content-title font-bold web-thin">Topic page</div>
-      <div class="content-text web-thin">
-        Lorem ipsum taking the UX research into account, as well as reviewing
-        Faire’s design system for ideal components, I approached the ideation
-        phase broadly, exploring a variety of design possibilities to improve
-        the Help Center experience. This included experimenting with layouts for
-        the home/hub, search results, topic, and article pages, while refining
-        key navigation components, such as the header and breadcrumb nav. My
-        goal was to address the pain points identified in the research, as well
-        as align the designs with industry best practices to create a more
-        intuitive and user-friendly experience.
-      </div>
-      <div class="content-title font-bold web-thin">Article page</div>
-      <div class="content-text web-thin">
-        Lorem ipsum taking the UX research into account, as well as reviewing
-        Faire’s design system for ideal components, I approached the ideation
-        phase broadly, exploring a variety of design possibilities to improve
-        the Help Center experience. This included experimenting with layouts for
-        the home/hub, search results, topic, and article pages, while refining
-        key navigation components, such as the header and breadcrumb nav. My
-        goal was to address the pain points identified in the research, as well
-        as align the designs with industry best practices to create a more
-        intuitive and user-friendly experience.
-      </div>
       <div class="content-title font-bold web-thin">A/B Testing</div>
       <div class="content-text web-thin">
-        Lorem ipsum taking the UX research into account, as well as reviewing
-        Faire’s design system for ideal components, I approached the ideation
-        phase broadly, exploring a variety of design possibilities to improve
-        the Help Center experience. This included experimenting with layouts for
-        the home/hub, search results, topic, and article pages, while refining
-        key navigation components, such as the header and breadcrumb nav. My
-        goal was to address the pain points identified in the research, as well
-        as align the designs with industry best practices to create a more
-        intuitive and user-friendly experience.
+        After finalizing the designs, our engineer implemented them on staging,
+        and I conducted several rounds of QA, creating JIRA tickets for any
+        issues identified. Once the build was finalized, we proceeded with the
+        experiments for both Retailers and Brands.
+      </div>
+      <div class="content-text web-thin">
+        For the Retailer experiment, which targeted logged-in users across all
+        geographies, we bucketed when they visit the Help Center home page. This
+        approach was essential due to the significant change of removing the
+        parent hub. The experiment utilized a 50/50 testing split among users
+        and required ~78K samples, with an estimated total duration of 3 months,
+        incorporating 1 month for samples to cure. A 3.5% minimum detectable
+        effect (MDE) was established at a 90% confidence level. The treatment
+        variant included all the design changes, excluding pagination on the
+        search results page (the pagination component had recently been updated
+        and was not built yet) The control variant featured no changes.
+      </div>
+      <div class="content-text web-thin">
+        Similarly, the Brand experiment focused solely on logged-in users, with
+        a 100% treatment group. Like the Retailer XP, this experiment bucketed
+        at the Help Center home page and required ~21K samples over an estimated
+        4.5 months, with a 5% MDE at 80% confidence. The treatment variant also
+        featured all design changes, and both experiments adhered to a "Do No
+        Harm" principle, ensuring that the updates would not negatively impact
+        customer experience (CX) metrics.
+      </div>
+      <div class="content-text web-thin">
+        <div class="content-text content-one-highlight-faire">
+          Primary Metric — F30D CX Retailer/Brand Zendesk tickets created
+        </div>
+        <div class="content-text content-one-highlight-faire">
+          Secondary Metrics — F30D Visits HC article and F30D Completes a HC
+          search
+        </div>
+        <div class="content-text content-one-highlight-faire">
+          Guardrails — F30D GMV and F30D Brand orders
+        </div>
+      </div>
+      <div img-crop>
+        <img
+          id="frame-of-mind"
+          class="content-img-last img-border web-thin"
+          src="img/hc-xp.gif"
+        />
+      </div>
+      <div class="content-title font-bold web-thin">Next Steps</div>
+      <div class="content-text web-thin">
+        As the experiment is still ongoing, continuous monitoring will be needed
+        to assess the effectiveness of the Help Center revamp. Early
+        observations indicated promising improvements, with metrics reflecting
+        an estimated 7.2% increase in user engagement with Help Center articles
+        for Retailers and a 6.5% increase for Brands. Additionally, there was a
+        4.3% reduction in Zendesk tickets created for Retailers, while Brands
+        saw a 3.1% decrease in ticket creation. In terms of search completions,
+        Retailers experienced a 5.8% improvement, whereas Brands noted a 7.4%
+        increase.
+      </div>
+      <div class="content-text-last web-thin">
+        In addition to monitoring the experiment, it’s important to update the
+        Help Center alongside the broader Support Experience initiatives that
+        are in the pipeline. As mentioned earlier, the Support Experience pod
+        plans to roll out an AI support chatbot, conduct a comprehensive content
+        audit for the Help Center, refresh the support issue taxonomy, and
+        standardize CSAT collection. Aligning the Help Center updates with these
+        initiatives (once they're implemented) will ensure a cohesive and
+        consistent user experience across Faire's support ecosystem.
+      </div>
+      <div class="content-title font-bold web-thin">Lessons Learned</div>
+      <div class="content-text web-thin">
+        I’m really glad I had the opportunity to lead the Help Center revamp—it
+        was incredibly fulfilling to influence nearly every aspect and take on a
+        scope much larger than I initially expected. This experience taught me
+        to balance broad project ownership while still focusing on the finer
+        design details. Working closely with the engineering and strategy teams
+        highlighted how important it is to bring together different perspectives
+        and data-driven insights in decision-making, all while keeping
+        feasibility and time constraints in mind. This was also my first time
+        conducting formal QAs on staging builds, and communicating with the
+        engineering team was super useful to ensure we were all on the same
+        page.
+      </div>
+      <div class="content-text web-thin">
+        A key takeaway for me is the importance of setting context specific for
+        different audiences—understanding key differences in working and
+        communicating with collaborators versus decision makers to keep projects
+        moving efficiently.
+      </div>
+      <div class="content-text-final web-thin">
+        <div class="reco-container">
+          <span class="color-blue"
+            ><span class="font-600">Jess Brown</span> &nbsp;|&nbsp; Staff
+            Product Designer at Faire, ex-Director of UX at VICE Media</span
+          >
+          <div class="reco">
+            "Chris exceeded expectations in this internship, by taking on
+            substantial projects, working efficiently and often independently,
+            and delivering high quality designs. He led a redesign for Faire’s
+            Help Center, including improving visual hierarchy, better
+            signposting, and offering more robust navigation options to support
+            wayfinding. In his design process, Chris efficiently explored
+            solutions, collaborated to narrow down, uncovered new requirements,
+            and created clear handoff documentation. He also worked well with
+            engineering—creating tickets, and offering detailed QA on builds.
+            The final implementation represents a meaningful improvement to an
+            essential part of Faire's platform."
+          </div>
+        </div>
       </div>
     </div>
     <div class="work-up-next">
