@@ -79,6 +79,11 @@ body {
   font-family: "manrope", sans-serif;
 }
 
+.color-blue {
+  color: #538cff;
+  font-family: "manrope", sans-serif;
+}
+
 .green {
   color: #54b948;
 }
@@ -551,7 +556,7 @@ body {
 .content-text {
   font-size: 16px;
   line-height: 2.25;
-  margin-bottom: 72px;
+  margin-bottom: 48px;
 }
 
 .content-text-last {
@@ -564,6 +569,11 @@ body {
   font-size: 16px;
   line-height: 2.25;
   margin-bottom: 256px;
+}
+
+.img-border {
+  border: solid #d6d6d6;
+  border-width: 0px 1px 1px 1px;
 }
 
 .content-img {
@@ -610,6 +620,16 @@ body {
 
 .color-rf {
   color: #46a6ff;
+}
+
+.reco-container {
+  background: #f7f7f7;
+  padding: 36px;
+  border-radius: 16px;
+}
+
+.reco {
+  padding: 16px;
 }
 
 .content-highlight-faire {
