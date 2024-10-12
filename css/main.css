@@ -485,16 +485,6 @@ body {
   margin-bottom: 16px;
 }
 
-.internship-title-img-faire {
-  height: 630px;
-  background-image: linear-gradient(to bottom right, #fffbf5, #f6efe2);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-top: 64px;
-  margin-bottom: 96px;
-}
-
 .internship-title-img-amd {
   height: 630px;
   background-image: linear-gradient(to bottom right, #9c9c9c, #1f1f1f);
@@ -522,7 +512,8 @@ body {
 
 .title-mockup-faire {
   height: auto;
-  width: 80%;
+  width: 100%;
+  margin: 32px 0px 64px 0px;
 }
 
 .title-mockup-amd {
@@ -549,10 +540,25 @@ body {
   line-height: 2ch;
 }
 
+.content-subtitle {
+  font-size: 24px;
+  font-weight: 500;
+  color: #7f7f7f;
+  margin-top: -16px;
+  margin-bottom: 24px;
+  line-height: 2ch;
+}
+
 .content-text {
   font-size: 16px;
   line-height: 2.25;
   margin-bottom: 48px;
+}
+
+.content-text-img {
+  font-size: 16px;
+  line-height: 2.25;
+  margin-bottom: 96px;
 }
 
 .content-text-last {
@@ -636,6 +642,11 @@ body {
   padding: 16px;
 }
 
+.key-title {
+  margin-bottom: 12px;
+  color: #000000;
+}
+
 .content-highlight-faire {
   background: #fffcf7;
   padding: 24px 24px 24px 24px;
@@ -646,11 +657,12 @@ body {
 }
 
 .content-one-highlight-faire {
+  color: #414141;
   background: #fffcf7;
-  padding: 24px 24px 24px 24px;
+  padding: 12px 20px 12px 20px;
   border-radius: 0px 16px 16px 0px;
   border-left-style: solid;
-  border-left-width: 8px;
+  border-left-width: 6px;
   border-left-color: #f3daac;
   margin-bottom: 12px;
 }
@@ -663,10 +675,10 @@ body {
 
 .content-one-highlight-amd {
   background: #fafafa;
-  padding: 24px 24px 24px 24px;
+  padding: 12px 20px 12px 20px;
   border-radius: 0px 16px 16px 0px;
   border-left-style: solid;
-  border-left-width: 8px;
+  border-left-width: 6px;
   border-left-color: #1f1f1f;
   margin-bottom: 12px;
 }
@@ -679,10 +691,10 @@ body {
 
 .content-one-highlight-rf {
   background: #f8fcff;
-  padding: 24px 24px 24px 24px;
+  padding: 12px 20px 12px 20px;
   border-radius: 0px 16px 16px 0px;
   border-left-style: solid;
-  border-left-width: 8px;
+  border-left-width: 6px;
   border-left-color: #46a6ff;
   margin-bottom: 12px;
 }
@@ -899,8 +911,8 @@ a.go-top-btn:hover {
   /* INTERNSHIPS */
 
   .title-mockup-faire {
-    height: 520px;
-    width: auto;
+    height: auto;
+    width: 100%;
   }
 
   .title-mockup-amd {
