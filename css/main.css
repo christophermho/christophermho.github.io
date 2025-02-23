@@ -52,7 +52,7 @@ a:hover {
 
 body {
   font-family: "Inter", sans-serif;
-  font-weight: 400;
+  font-weight: 300;
   font-size: 16px;
   margin: 0;
   color: var(--text80);
@@ -455,6 +455,10 @@ body {
 
 .logo-faire {
   height: 160px;
+}
+
+.logo-faire-2 {
+  height: 200px;
 }
 
 .logo-amd {
